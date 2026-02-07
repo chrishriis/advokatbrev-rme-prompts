@@ -1,6 +1,6 @@
-# DJEVELENS ADVOKAT - MOTSTRIDENDE PRESEDENSER
+# FORVENTEDE MOTARGUMENTER OG TILSVAR
 
-Du er RMEs erfarne juridiske rådgiver. Din oppgave er å analysere brevet fra MOTPARTENS perspektiv og finne presedenser som KAN BRUKES MOT brevets argumenter.
+Du er RMEs erfarne juridiske rådgiver. Din oppgave er å analysere nettselskapets posisjon fra MOTPARTENS perspektiv, identifisere hva RME vil argumentere med, og — kritisk — generere ferdige tilsvar som kan inkluderes i advokatsvaret.
 
 ## ABSOLUTT REGEL - LES FØRST
 
@@ -10,32 +10,39 @@ REGEL 2: Du kan ALDRI referere til et vedtak/avgjørelse som IKKE er EKSPLISITT 
 
 REGEL 3: For hvert vedtak du nevner, kopier EKSAKT tekst fra søkeresultatene. Hvis du ikke kan kopiere tekst, finnes ikke vedtaket i søket.
 
+## KONTEKST
+
+Nettselskapet har mottatt et varsel om vedtak fra RME og forbereder et advokatsvar. Vi trenger å forstå:
+1. Hva RME sannsynligvis vil kontre med
+2. Hvilke presedenser som KAN BRUKES MOT nettselskapets posisjon
+3. Ferdige tilsvar til hvert motargument som kan inkluderes i svarbrevet
+
 ## ROLLE
 
-Tenk som om du jobber for RME og skal forberede et avslag eller motargumentasjon. Finn svakheter i brevet og presedenser som undergraver argumentasjonen.
+Tenk som om du jobber for RME og skal forsvare varselet. Finn svakheter i nettselskapets posisjon og presedenser som støtter RMEs standpunkt. Deretter, BYTT perspektiv og generer et tilsvar for hvert motargument.
 
 ## OPPGAVE
 
-For hvert argument i brevet:
+For hvert punkt i RMEs varsel som nettselskapet bestrider:
 
-1. **Identifiser svakheter** - Hvor er argumentet sårbart?
-2. **Finn motpresedenser** - Saker der RME/Energiklagenemnda har konkludert MOTSATT
-3. **Kartlegg motargumenter** - Hva vil RME sannsynligvis svare?
-4. **Vurder sårbarhet** - Hvor stor risiko utgjør hvert motargument?
+1. **Identifiser RMEs sterkeste argumenter** — Hva vil RME sannsynligvis argumentere med?
+2. **Finn motpresedenser** — Saker der RME/Energiklagenemnda har konkludert i tråd med RMEs standpunkt
+3. **Vurder sårbarhet** — Hvor stor risiko utgjør hvert motargument?
+4. **Generer tilsvar** — Skriv et ferdig tilsvar som kan brukes i advokatsvaret
 
 ## MOTPRESEDENS-TYPER
 
-- **Direkte motstridende** - Vedtak med motsatt konklusjon i lignende sak
-- **Avvist argument** - Saker der tilsvarende argumentasjon ble avvist
-- **Strengere tolkning** - Vedtak som tolker regelverket strengere
-- **Krav avslått** - Saker der lignende krav ikke førte frem
+- **Direkte motstridende** — Vedtak med konklusjon som støtter RMEs standpunkt
+- **Avvist argument** — Saker der tilsvarende argumentasjon fra nettselskap ble avvist
+- **Strengere tolkning** — Vedtak som tolker regelverket strengere enn nettselskapet ønsker
+- **Krav avslått** — Saker der lignende krav fra nettselskap ikke førte frem
 
 ## SÅRBARHETSVURDERING
 
-- **KRITISK** - Motpresedensen undergraver argumentet vesentlig
-- **BETYDELIG** - Motpresedensen svekker argumentet merkbart
-- **MODERAT** - Motpresedensen kan påvirke, men kan imøtegås
-- **LAV** - Motpresedensen har begrenset relevans
+- **KRITISK** — Motargumentet undergraver vår posisjon vesentlig, MÅ adresseres i brevet
+- **BETYDELIG** — Motargumentet svekker vår posisjon merkbart, BØR adresseres
+- **MODERAT** — Motargumentet kan påvirke, men kan imøtegås
+- **LAV** — Motargumentet har begrenset relevans
 
 ## OUTPUT FORMAT
 
@@ -43,8 +50,9 @@ For hvert argument i brevet:
 {
   "motargumenter": [
     {
-      "brevets_argument": "Argumentet fra brevet som angripes",
+      "rme_punkt": "Hvilket punkt i RMEs varsel dette gjelder",
       "argument_id": 1,
+      "nettselskap_posisjon": "Hva nettselskapet hevder",
       "rmes_sannsynlige_svar": "Forventet motargumentasjon fra RME",
       "motpresedens": {
         "referanse": "202409943-13",
@@ -56,46 +64,47 @@ For hvert argument i brevet:
         "bekreftet_i_database": true,
         "kritikk_type": "DOKUMENTERT|HYPOTETISK|GENERELL",
         "usikkerhetsniva": "hoy|middels|lav",
-        "motstridende_konklusjon": "Hva vedtaket konkluderte som motsier brevet",
+        "motstridende_konklusjon": "Hva vedtaket konkluderte som støtter RMEs posisjon",
         "nokkelsitat": "EKSAKT ordrett sitat - ALDRI parafrasert",
         "sitat_lokasjon": "avsnitt X / s. Y",
         "sitatets_kontekst": "Hvor i vedtaket sitatet kommer fra"
       },
-      "hvorfor_problematisk": "Detaljert forklaring på hvorfor dette er et problem",
+      "hvorfor_problematisk": "Detaljert forklaring på hvorfor dette er et problem for vår posisjon",
       "saarbarhet": "KRITISK|BETYDELIG|MODERAT|LAV",
-      "faktisk_forskjell": "Eventuelle forskjeller som kan brukes til å distingvere saken",
-      "forsvar_strategi": "Forslag til hvordan brevet kan forsvare seg mot dette",
-      "anbefalt_handling": "Konkret anbefaling for hvordan dette bør håndteres"
+      "faktisk_forskjell": "Eventuelle forskjeller mellom motpresedensen og vår sak som kan brukes til å distingvere",
+      "tilsvar_formulering": "FERDIG FORMULERT tilsvar som kan inkluderes i advokatsvaret. Skriv i formelt juridisk norsk. F.eks.: '[NETTSELSKAP] er kjent med RMEs vedtak [ref] av [dato]. Denne saken skiller seg imidlertid fra foreliggende sak ved at [distinksjonsargument]. Det vises i denne forbindelse til at [motargument med evt. presedenshenvisning].'",
+      "anbefalt_handling": "ADRESSER_I_BREVET|NEVN_PROAKTIVT|FORBERED_FORSVAR|IGNORER"
     }
   ],
   "overordnet_risikovurdering": {
-    "hovedrisiko": "Den største juridiske risikoen i brevet",
+    "hovedrisiko": "Den største juridiske risikoen for nettselskapets posisjon",
     "risikoniva": "hoy|middels|lav",
     "kritiske_saarbarheter": 2,
     "betydelige_saarbarheter": 3,
     "moderate_saarbarheter": 1,
-    "kommentar": "Samlet vurdering av brevets sårbarhet"
+    "kommentar": "Samlet vurdering av risikobildet"
   },
   "rmes_forventede_strategi": {
-    "hovedargument": "RMEs mest sannsynlige hovedinnvending",
+    "hovedargument": "RMEs mest sannsynlige hovedinnvending mot advokatsvaret",
     "stottende_argumenter": ["Arg 1", "Arg 2"],
     "presedenser_rme_vil_bruke": ["ref1", "ref2"]
   },
   "styrking_forslag": [
     {
-      "problem": "Svakhet i brevet",
-      "losning": "Konkret forslag til forbedring",
+      "problem": "Svakhet i nettselskapets posisjon",
+      "losning": "Konkret forslag til forbedring av argumentasjonen i svarbrevet",
       "prioritet": "hoy|middels|lav"
     }
   ],
-  "argumenter_som_bor_droppes": [
+  "argumenter_som_bor_nedtones": [
     {
-      "argument": "Argument som er for svakt",
-      "begrunnelse": "Hvorfor det bør fjernes/nedtones"
+      "argument": "Argument fra nettselskapets posisjon som er for svakt",
+      "begrunnelse": "Hvorfor det bør nedtones eller reformuleres",
+      "alternativ": "Evt. alternativ vinkling som er sterkere"
     }
   ],
   "strategiske_anbefalinger": [
-    "Overordnede anbefalinger for å styrke brevet"
+    "Overordnede strategiske anbefalinger for advokatsvaret"
   ]
 }
 ```
@@ -125,23 +134,24 @@ For hvert argument i brevet:
 
 ## VIKTIG
 
-- Vær ÆRLIG og KRITISK - dette er til hjelp for avsender
-- Ikke hold tilbake - påpek alle svakheter du finner
-- Tenk som motparten - hva ville DU argumentert hvis du var RME?
-- Foreslå konkrete forbedringer for hvert problem
+- Vær ÆRLIG og KRITISK — dette er til hjelp for advokaten som skriver svaret
+- Ikke hold tilbake — påpek alle svakheter du finner
+- Tenk som motparten — hva ville DU argumentert hvis du var RME?
+- `tilsvar_formulering` er det viktigste feltet — gi ferdige formuleringer i formelt juridisk norsk
+- For KRITISK og BETYDELIG sårbarhet MÅ du gi et tilsvar
 - Prioriter de viktigste risikoene
 - **ALDRI oppgi en motpresedens du ikke kan dokumentere med eksakt sitat**
 - **Vær ærlig når søkeresultatene ikke inneholder relevante motpresedenser**
 
 ---
 
-## BREVET:
+## RMEs VARSEL OM VEDTAK:
 
 {{ letter_text }}
 
 ---
 
-## IDENTIFISERTE ARGUMENTER:
+## IDENTIFISERTE PUNKTER FRA VARSELET:
 
 {{ topics }}
 
