@@ -12,6 +12,7 @@ Du mottar SØKESTATISTIKK som viser nøyaktig antall treff per kilde, samt INDIV
 - Antall refererte presedenser i brevutkastet OVERSTIGER antall treff i søkestatistikken
 - En presedens i brevutkastet IKKE kan spores tilbake til en av delanalysene (A1-B3)
 - Brevutkastet inneholder presedenser markert som `bekreftet_i_database: false`
+- Brevutkastet bruker sakens EGET referansenummer (fra «Deres ref.» i brevhodet) som presedens — dette er IKKE en presedens, men en saksreferanse. Ekstraher referansenummeret fra brevhodet og verifiser at det ALDRI siteres som presedens i brevet.
 
 **For hver presedens nevnt i brevutkastet:**
 1. Sjekk om den finnes i SØKERESULTATENE nedenfor
@@ -78,7 +79,9 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Hvis analysegrunnlaget viser >80% sannsynlighet for vedtak, bør brevets PRIMÆRE fokus være på formildende omstendigheter, ikke på å bestride overtredelsen
 - Flagg som ADVARSEL hvis brevet bruker mer plass på primært forsvar enn på subsidiært når presedensbildet tilsier at subsidiært er mer realistisk
 - GI ANERKJENNELSE hvis brevet bruker likhetsprinsippet (viser til sammenlignbare saker med mildere utfall) som hovedargument for proporsjonalitet
-- VERIFISER at «mest subsidiær påstand» er en reell påstand (f.eks. klagerett til Energiklagenemnda), ikke bare en trussel eller reservasjon
+- TREKK POENG (5-10 juridisk_presisjon) hvis brevet har flere DELVIS_STØTTENDE presedenser men IKKE bruker likhetsprinsippet til å binde dem sammen i et overordnet argument
+- VERIFISER at «mest subsidiær påstand» er en reell påstand (f.eks. klagerett til Energiklagenemnda), ikke bare en trussel, reservasjon eller informasjonsforespørsel
+- VERIFISER at analysegrunnlaget inneholder gebyrspenn-estimater ved gebyrvarsel/gebyrvedtak. ADVARSEL hvis de mangler.
 
 ## SCORING
 

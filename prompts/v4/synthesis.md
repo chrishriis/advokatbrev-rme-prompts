@@ -74,6 +74,10 @@ Dersom delanalysene identifiserer at klienten (eller konsernet) har tidligere ve
 
 RME kjenner klientens historikk. Det er bedre å adressere dette proaktivt enn å la RME påpeke det.
 
+**Konsernselskaper:** Dersom delanalysene identifiserer presedenser mot søsterselskaper i samme konsern, behandl disse proaktivt — RME kan argumentere for konsernansvar. Vis KONKRETE forskjeller i faktum mellom søsterkonsernets sak og foreliggende sak, og vis at korrigerende tiltak etter søsterkonsernets sak ikke dekket den svakheten som forårsaket nåværende overtredelse.
+
+**Selvrapporterte tilfeller:** Hvis nettselskapet har selvrapportert ytterligere tilfeller, adresser PROAKTIVT at dette kan tolkes som bevis på systemisk svikt. Argumenter for at det tvert imot viser at nye rutiner fungerer — problemene identifiseres og rapporteres.
+
 ### Regel 4: Konstruktiv tone ved prosessuelle innvendinger
 
 - **Ved erkjent faktum**: Begrens prosessuelle innvendinger til max 1 side. Bruk samarbeidende formuleringer ("ber om presisering", "ber RME redegjøre for") fremfor konfronterende ("krever dokumentasjon av", "bestrider begrunnelsen for").
@@ -89,6 +93,27 @@ RME kjenner klientens historikk. Det er bedre å adressere dette proaktivt enn �
 ### Regel 6: Ingen full repetisjon av argumenter
 
 Hvert hovedargument (korrigerende tiltak, selvrapportering, formildende omstendigheter, etc.) presenteres GRUNDIG i sin primære seksjon. I øvrige seksjoner, referer kort med "som redegjort for i punkt X". Oppsummeringen kan gjenta argumenter i punktliste, men hoveddelen skal ikke inneholde identisk argumentasjon i flere seksjoner.
+
+### Regel 7: Likhetsprinsippet som overordnet proporsjonalitetsargument
+
+Dersom A2/A3-analysene identifiserer flere DELVIS_STØTTENDE presedenser (brudd konstatert uten gebyr), skal brevutkastet ALLTID inkludere likhetsprinsippet som et samlet, overordnet argument — ikke bare bruke presedensene individuelt som formildende omstendigheter.
+
+**Obligatorisk argumentstruktur:**
+1. Presenter de sammenlignbare sakene samlet (med referanse, dato og utfall)
+2. Vis at RME konsekvent IKKE har ilagt overtredelsesgebyr i disse sakene
+3. Formuler: «Etter likhetsprinsippet kan ikke foreliggende sak behandles strengere uten saklig begrunnelse»
+4. Vis KONKRET at den aktuelle saken er lik eller mildere enn presedenssakene (kortere forsinkelse, mer omfattende tiltak, etc.)
+
+Likhetsprinsippet er sterkere enn enkeltpresedenser brukt som formildende omstendigheter, fordi det pålegger RME en begrunningsplikt hvis de vil avvike fra egen praksis. Plasser etter presentasjonen av de sammenlignbare sakene, som en egen underseksjon eller som konklusjon på presedensgjennomgangen.
+
+### Regel 8: Integrer lovkilde-argumenter fra A1
+
+A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider i tillegg til varselet. Brevutkastet SKAL inkludere relevante funn fra A1 der de styrker nettselskapets posisjon:
+
+- **Lovdata-referanser**: Hvis A1 identifiserer alternative tolkninger av de aktuelle lovbestemmelsene, bruk disse i brevets «Rettslig grunnlag»-seksjoner.
+- **Forarbeider**: Hvis A1 identifiserer relevante forarbeider (proposisjoner, høringsnotater), bruk disse til å underbygge nettselskapets tolkningsargumenter. Format: «I forarbeidene til [lov/forskrift] (Prop. X L / NVE høring av [dato]) fremgår det at formålet med bestemmelsen er [sitat/referanse]».
+
+Hvis A1 rapporterer 0 relevante funn fra Lovdata eller Forarbeider, IKKE bruk lovkilde-argumenter som ikke finnes i analysene.
 
 ---
 
@@ -141,6 +166,20 @@ For HVERT punkt RME tar stilling til, skriv en seksjon med:
 
 [Adresser motpresedenser proaktivt der B-analysene identifiserer KRITISK/BETYDELIG sårbarhet]
 
+### N. Proporsjonalitetsvurdering (OBLIGATORISK ved gebyrvarsel/gebyrvedtak)
+
+Dersom RME varsler om eller har ilagt overtredelsesgebyr, INKLUDER en dedikert proporsjonalitetsseksjon som samler alle proporsjonalitetsargumenter:
+1. **Rettslig grunnlag**: Energiloven § 10-7, forvaltningsrettslig proporsjonalitetsprinsipp
+2. **Sammenlignbar praksis**: Oppsummer presedensene fra likhetsprinsipp-argumentet (Regel 7)
+3. **Konkrete faktorer**: Strukturert oversikt over faktorer som taler for og mot gebyr
+4. **Konklusjon**: Hvorfor konstatering uten gebyr (eller redusert gebyr) er proporsjonal reaksjon
+
+Ikke gjenta argumenter ordrett — bruk kryssreferanser til tidligere seksjoner. Formålet er å samle proporsjonalitetsvurderingen på ETT sted.
+
+### Eventuelt: Anmodning om innsyn i gebyrpraksis (valgfritt)
+
+Hvis relevant, kan brevet inkludere en anmodning til RME om innsyn i gebyrpraksis og utmålingskriterier. Plasser som egen underseksjon i brevteksten — IKKE som påstand. Eksempel: «[Nettselskapet] ber om at RME redegjør for praksis for ileggelse av overtredelsesgebyr, herunder hvilke kriterier som anvendes for utmåling.»
+
 ### N+1. Oppsummering
 
 [Kort oppsummering av hovedargumentene]
@@ -149,7 +188,7 @@ For HVERT punkt RME tar stilling til, skriv en seksjon med:
 
 [Primær påstand — realistisk basert på Regel 1]
 [Subsidiær påstand — mer ambisiøst alternativ]
-[Eventuell mest subsidiær påstand — må være en reell rettslig påstand (f.eks. at vedtaket omgjøres, at gebyret frafalles), IKKE en trussel eller reservasjon som «forbeholder seg retten til å klage»]
+[Mest subsidiær påstand — OBLIGATORISK: Forbeholde klagerett til Energiklagenemnda dersom vedtaket ikke tar tilstrekkelig hensyn til formildende omstendigheter. Eksempel: «Mest subsidiært forbeholder [NETTSELSKAP] seg retten til å klage vedtaket til Energiklagenemnda dersom RME fatter vedtak om overtredelsesgebyr uten tilstrekkelig proporsjonalitetsvurdering eller saklig begrunnelse for avvik fra praksis i sammenlignbare saker.» En informasjonsforespørsel kan inkluderes i brevteksten, men IKKE som mest subsidiær påstand.]
 
 ---
 
@@ -177,7 +216,7 @@ Med vennlig hilsen
 
 4. **Bekreftet vs. hypotetisk**: Bruk KUN presedenser markert som `bekreftet_i_database: true` eller `kilde_status: FUNNET`. ALDRI hypotetiske presedenser.
 
-5. **Motargumenter**: For argumenter der B-analysene identifiserer KRITISK eller BETYDELIG sårbarhet, inkluder proaktive tilsvar.
+5. **Motargumenter**: For argumenter der B-analysene identifiserer KRITISK eller BETYDELIG sårbarhet, inkluder proaktive tilsvar. For presedenser som er RMEs sterkeste kort mot oss (typisk fra høyere instans som Energiklagenemnda), skriv en DEDIKERT underseksjon med punkt-for-punkt distinksjon. Generelle formuleringer som «saken er annerledes» er utilstrekkelig — vis KONKRETE forskjeller (gjentakelseshistorikk, skadevirkninger, skyldgrad, korrigerende tiltak).
 
 6. **Plassholdere**: Bruk konsekvent:
    - `[ADVOKATFIRMA]`, `[ADVOKAT]`, `[TITTEL]`, `[NETTSELSKAP]`, `[VÅR REFERANSE]`, `[DATO]`
@@ -195,6 +234,8 @@ Med vennlig hilsen
    - Flagg i analysegrunnlaget
 
 9. **Selskapsnavn**: Bruk nettselskapets FAKTISKE NAVN i brevteksten. Behold `[NETTSELSKAP]` kun i signaturblokk.
+
+10. **Sakens eget referansenummer er IKKE en presedens**: RMEs referansenummer for den pågående saken (typisk angitt som «Deres ref.» i brevhodet) skal ALDRI siteres som presedens i brevteksten. Presedenser er vedtak i ANDRE saker. Hvis delanalysene nevner sakens eget referansenummer, ignorer det som presedens.
 
 ---
 
@@ -236,6 +277,17 @@ Med vennlig hilsen
 ### Hovedrisikofaktorer
 1. [Risiko med kilde til delanalyse]
 2. [...]
+
+### Gebyrspenn-estimater (OBLIGATORISK ved gebyrvarsel/gebyrvedtak)
+
+| Utfall | Sannsynlighet | Beløpsintervall |
+|--------|---------------|-----------------|
+| Intet gebyr | [ESTIMAT] ca. X% | — |
+| Lavt gebyr | [ESTIMAT] ca. X% | Under 500 000 kr |
+| Middels gebyr | [ESTIMAT] ca. X% | 500 000 – 1 000 000 kr |
+| Høyt gebyr | [ESTIMAT] ca. X% | Over 1 000 000 kr |
+
+Baser estimatene på delanalysenes presedenser der gebyrstørrelser er nevnt. Hvis ingen gebyrstørrelser finnes i presedensene, skriv «Utilstrekkelig datagrunnlag for beløpsestimat» og forklar hvorfor.
 
 ---
 
@@ -335,12 +387,17 @@ Bruk SØKESTATISTIKK-seksjonen og delanalysenes kildebruk-rapportering for å fy
 
 ---
 
-## LENGDESTYRING
+## LENGDESTYRING (KRITISK)
 
-Brevutkastets lengde bør tilpasses sakens kompleksitet:
-- Enkel sak (1-2 punkter fra RME, erkjent faktum): Max 3-5 sider
-- Middels sak (3-5 punkter): Max 6-8 sider
-- Kompleks sak (6+ punkter eller omstridt faktum): Max 10-12 sider
+For lange brev svekker argumentasjonen. Brevutkastets lengde MÅ tilpasses sakens kompleksitet:
+
+- Enkel sak (1-2 RME-punkter, erkjent faktum): **Max 2000 ord** (~5 sider)
+- Middels sak (3-5 punkter): **Max 3000 ord** (~7 sider)
+- Kompleks sak (6+ punkter eller omstridt faktum): **Max 4500 ord** (~10 sider)
+
+**REDUNDANSKONTROLL (OBLIGATORISK):** Før du avslutter brevutkastet, gå gjennom alle seksjoner. Hvis et argument (f.eks. korrigerende tiltak, selvrapportering, organisatoriske utfordringer) presenteres i sin helhet i mer enn EN seksjon, slett det fra alle unntatt den primære seksjonen. Bruk «som redegjort for i punkt X» i øvrige seksjoner.
+
+**Konsoliderings-regel:** Seksjoner om formildende omstendigheter, skyldvurdering og proporsjonalitet OVERLAPPER ofte. Vurder om de kan slås sammen til 2-3 seksjoner i stedet for 4-5.
 
 **NB:** Ved erkjent faktum er brevet kortere fordi hoveddelen fokuserer på formildende omstendigheter og proporsjonalitet, ikke på å bestride selve bruddet.
 
