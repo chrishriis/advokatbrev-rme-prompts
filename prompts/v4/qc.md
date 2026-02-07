@@ -77,6 +77,8 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Er brevets primære strategi konsistent med analysegrunnlagets risikovurdering?
 - Hvis analysegrunnlaget viser >80% sannsynlighet for vedtak, bør brevets PRIMÆRE fokus være på formildende omstendigheter, ikke på å bestride overtredelsen
 - Flagg som ADVARSEL hvis brevet bruker mer plass på primært forsvar enn på subsidiært når presedensbildet tilsier at subsidiært er mer realistisk
+- GI ANERKJENNELSE hvis brevet bruker likhetsprinsippet (viser til sammenlignbare saker med mildere utfall) som hovedargument for proporsjonalitet
+- VERIFISER at «mest subsidiær påstand» er en reell påstand (f.eks. klagerett til Energiklagenemnda), ikke bare en trussel eller reservasjon
 
 ## SCORING
 
@@ -89,11 +91,18 @@ Gi score 0-100 for hver dimensjon:
 
 ### Scoringskalibrering
 
-- **juridisk_presisjon**: Trekk BETYDELIG (10-15 poeng) hvis brevets primære påstand er svak basert på presedensbildet. Et brev kan være teknisk korrekt men likevel juridisk upresist hvis det overvurderer sannsynligheten for å vinne frem.
+**VIKTIG — Vurder hva brevet FAKTISK gjør, ikke bare generelle svakheter:**
+Før du trekker poeng, verifiser at kritikken faktisk stemmer for det konkrete brevutkastet du vurderer. Hvis brevet allerede har adressert et potensielt problem (f.eks. inkludert likhetsprinsippet, brukt realistisk påstand, konsolidert argumenter), skal du IKKE trekke poeng for dette problemet. Les brevet grundig før du scorer.
+
+- **juridisk_presisjon**:
+  - Trekk BETYDELIG (10-15 poeng) hvis brevets primære påstand er svak basert på presedensbildet
   - Bestrides noe som er udiskutabelt? Trekk poeng.
   - Er den primære påstanden mer ambisiøs enn presedensbildet tilsier? Trekk poeng.
   - Er subsidiære påstander godt formulert som fallback? Gi poeng.
-- **brevkvalitet**: Trekk poeng for unødvendig repetisjon og brevlengde som ikke er proporsjonalt med sakens kompleksitet.
+  - GI POENG (5-10) hvis brevet bruker likhetsprinsippet strategisk (f.eks. viser til at sammenlignbare saker ikke resulterte i gebyr)
+  - GI POENG (5-10) hvis brevet har realistisk primær påstand som matcher risikovurderingen
+- **brevkvalitet**: Trekk poeng for unødvendig repetisjon og brevlengde som ikke er proporsjonalt med sakens kompleksitet. GI POENG for konsist brevutkast der argumenter ikke gjentas.
+- **konsistens**: GI POENG hvis brevets strategi matcher analysegrunnlagets risikovurdering. Trekk poeng hvis brevet og analysegrunnlaget gir motstridende signaler.
 
 ## BESLUTNING
 

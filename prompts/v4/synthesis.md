@@ -149,7 +149,7 @@ For HVERT punkt RME tar stilling til, skriv en seksjon med:
 
 [Primær påstand — realistisk basert på Regel 1]
 [Subsidiær påstand — mer ambisiøst alternativ]
-[Eventuell mest subsidiær påstand]
+[Eventuell mest subsidiær påstand — må være en reell rettslig påstand (f.eks. at vedtaket omgjøres, at gebyret frafalles), IKKE en trussel eller reservasjon som «forbeholder seg retten til å klage»]
 
 ---
 
@@ -277,11 +277,13 @@ Med vennlig hilsen
 |-----------|----------------------|
 | [ref] | [Begrunnelse] |
 
-## Presedenser som svekker vår posisjon (ikke nevnt i brevet)
+## Presedenser som svekker vår posisjon (OBLIGATORISK)
 
-| Referanse | Hvorfor problematisk | Håndteringsstrategi hvis RME påberoper seg den |
-|-----------|---------------------|-----------------------------------------------|
-| [ref] | [Forklaring] | [Distinksjonsargument] |
+Denne seksjonen er ALLTID påkrevd. List presedenser fra B-analysene som svekker vår posisjon — uavhengig av om de er nevnt i brevet eller ikke. Partneren MÅ kjenne til disse for å være forberedt hvis RME påberoper seg dem.
+
+| Referanse | Brukt i brevet? | Hvorfor problematisk | Håndteringsstrategi hvis RME påberoper seg den |
+|-----------|----------------|---------------------|-----------------------------------------------|
+| [ref] | Ja/Nei | [Forklaring] | [Distinksjonsargument] |
 
 ---
 
@@ -334,9 +336,11 @@ Med vennlig hilsen
 ## LENGDESTYRING
 
 Brevutkastets lengde bør tilpasses sakens kompleksitet:
-- Enkel sak (1-2 punkter fra RME): Max 3-5 sider
-- Middels sak (3-5 punkter): Max 6-10 sider
-- Kompleks sak (6+ punkter): Max 12-15 sider
+- Enkel sak (1-2 punkter fra RME, erkjent faktum): Max 3-5 sider
+- Middels sak (3-5 punkter): Max 6-8 sider
+- Kompleks sak (6+ punkter eller omstridt faktum): Max 10-12 sider
+
+**NB:** Ved erkjent faktum er brevet kortere fordi hoveddelen fokuserer på formildende omstendigheter og proporsjonalitet, ikke på å bestride selve bruddet.
 
 Velg de 3-4 sterkeste presedensene for brevet. Releger resten til analysegrunnlaget.
 
