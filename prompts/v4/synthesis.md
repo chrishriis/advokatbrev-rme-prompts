@@ -289,12 +289,14 @@ Denne seksjonen er ALLTID påkrevd. List presedenser fra B-analysene som svekker
 
 ## Analysegrunnlag og begrensninger
 
-| Kilde | Søkt | Funnet | Dekningsgrad |
-|-------|------|--------|--------------|
-| RME-vedtak | X | Y | Y/X% |
-| Energiklagenemnda | X | Y | Y/X% |
-| Lovdata | X | Y | Y/X% |
-| Forarbeider | X | Y | Y/X% |
+Bruk SØKESTATISTIKK-seksjonen og delanalysenes kildebruk-rapportering for å fylle ut denne tabellen. Alle fire kilder ble søkt. Hvis en kilde ga 0 relevante treff, skriv "0 relevante" — IKKE "Ikke søkt".
+
+| Kilde | Søkt | Funnet relevante | Dekningsgrad |
+|-------|------|------------------|--------------|
+| RME-vedtak | X | Y relevante | Y/X% |
+| Energiklagenemnda | X | Y relevante | Y/X% |
+| Lovdata | X | Y relevante | Y/X% |
+| Forarbeider | X | Y relevante | Y/X% |
 
 **Begrensninger:**
 - [Spesifikke begrensninger — f.eks. manglende presedenser om gebyrutmåling]
