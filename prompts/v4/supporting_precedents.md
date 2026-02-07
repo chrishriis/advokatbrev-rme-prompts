@@ -31,6 +31,25 @@ For hver presedens, vurder:
 - **Juridisk likhet** — Anvendes samme rettsregler og tolkninger?
 - **Utfall** — Gikk saken i favør av nettselskapet/tilsvarende posisjon?
 
+## KRITISK DISTINKSJON — MEDHOLD VS. BRUDD UTEN GEBYR
+
+"RME fattet vedtak om brudd, men ila ikke gebyr" er IKKE det samme som "RME ga medhold". Det betyr at:
+- Nettselskapet TAPTE på spørsmålet om overtredelse
+- Nettselskapet KAN ha "vunnet" på spørsmålet om gebyr
+
+Klassifiser presedenser korrekt:
+- **STØTTENDE** = Medhold i at overtredelse IKKE forelå
+- **DELVIS_STØTTENDE** = Brudd konstatert, men ingen gebyr (kun relevant for gebyrvurderingen)
+- **IKKE_STØTTENDE** = Brudd + gebyr, eller brudd konstatert med støtte for RMEs argumentasjon
+
+Denne distinksjonen er KRITISK for at C2 skal velge riktig strategi.
+
+## RELEVANSTERSKEL
+
+IKKE inkluder presedenser med styrke SVAK med mindre de gjelder SAMME lovbestemmelse (paragraf) som varselet omhandler. En avgjørelse om inntektsramme eller anleggsbidrag er ALDRI relevant som støttende presedens for et varsel om brudd på systemansvarsforskriften, selv om samme selskap er part.
+
+Hvis du finner få eller ingen støttende presedenser, er det BEDRE å si "Kun X relevante presedenser funnet" enn å fylle med irrelevante saker.
+
 ## STYRKEGRADERING
 
 - **STERK** — Direkte relevant presedens med høy overføringsverdi

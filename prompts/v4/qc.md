@@ -61,6 +61,23 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Stemmer analysegrunnlaget overens med brevutkastet?
 - Er konklusjonene logisk utledet?
 
+### 8. Fristsjekk (KRITISK)
+- Inneholder varselet en svarfrist?
+- Er fristen overskredet på genereringsdato?
+- Hvis ja: Er dette adressert i brevutkastet?
+- Automatisk ADVARSEL hvis frist er overskredet uten at brevet adresserer det
+
+### 9. Brevlengde og redundans
+- Er brevutkastet proporsjonalt med sakens kompleksitet?
+- Inneholder brevet unødvendig repetisjon av samme argumenter?
+- Kunne seksjoner vært konsolidert?
+- ADVARSEL hvis brevet overstiger 15 sider for en enkel sak (1-2 punkter)
+
+### 10. Strategisk konsistens
+- Er brevets primære strategi konsistent med analysegrunnlagets risikovurdering?
+- Hvis analysegrunnlaget viser >80% sannsynlighet for vedtak, bør brevets PRIMÆRE fokus være på formildende omstendigheter, ikke på å bestride overtredelsen
+- Flagg som ADVARSEL hvis brevet bruker mer plass på primært forsvar enn på subsidiært når presedensbildet tilsier at subsidiært er mer realistisk
+
 ## SCORING
 
 Gi score 0-100 for hver dimensjon:
@@ -69,6 +86,14 @@ Gi score 0-100 for hver dimensjon:
 - **50-69:** Akseptabel — fungerer, men har mangler
 - **30-49:** Svak — betydelige forbedringer nødvendig
 - **0-29:** Utilstrekkelig — krever omarbeiding
+
+### Scoringskalibrering
+
+- **juridisk_presisjon**: Trekk BETYDELIG (10-15 poeng) hvis brevets primære påstand er svak basert på presedensbildet. Et brev kan være teknisk korrekt men likevel juridisk upresist hvis det overvurderer sannsynligheten for å vinne frem.
+  - Bestrides noe som er udiskutabelt? Trekk poeng.
+  - Er den primære påstanden mer ambisiøs enn presedensbildet tilsier? Trekk poeng.
+  - Er subsidiære påstander godt formulert som fallback? Gi poeng.
+- **brevkvalitet**: Trekk poeng for unødvendig repetisjon og brevlengde som ikke er proporsjonalt med sakens kompleksitet.
 
 ## BESLUTNING
 

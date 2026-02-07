@@ -127,6 +127,13 @@ Med vennlig hilsen
    - Bruk "gjøres gjeldende", "anføres", "vises til", "det foreligger", etc.
    - IKKE bruk emojis, bullet points med stjerne, eller uformell formatering
 
+8. **Fristhåndtering**: Hvis varselet angir en svarfrist, BEREGN om fristen er utløpt eller nær forestående (basert på genereringsdato). Hvis fristen er utløpt:
+   - Inkluder en tydelig `[ADVARSEL: FRIST OVERSKREDET]` øverst i brevet
+   - Foreslå tekst om at det søkes om utsatt frist eller at brevet sendes med forbehold
+   - Flagg dette i analysegrunnlaget under "MÅ vurderes"
+
+9. **Selskapsnavn**: Bruk nettselskapets FAKTISKE NAVN (fra varselet) i brevteksten. Behold `[NETTSELSKAP]` kun i signaturblokk og brevhode der advokaten må velge formell navngivning.
+
 ---
 
 ## DOKUMENT 2: FORMAT FOR ANALYSEGRUNNLAG
@@ -250,6 +257,25 @@ Med vennlig hilsen
    - ALDRI presenter en konklusjon som sikrere enn datagrunnlaget tillater
 
 ---
+
+## LENGDESTYRING
+
+Brevutkastets lengde bør tilpasses sakens kompleksitet:
+- Enkel sak (1-2 punkter fra RME): Max 3-5 sider
+- Middels sak (3-5 punkter): Max 6-10 sider
+- Kompleks sak (6+ punkter): Max 12-15 sider
+
+Hvis presedensanalysen dekker mange vedtak, VELG de 3-4 sterkeste for brevet og releger resten til analysegrunnlaget. En advokat som leser brevet skal få de viktigste argumentene uten å drukne i detaljer.
+
+## REDUNDANSREDUKSJON
+
+Hovedargumenter (korrigerende tiltak, selvrapportering, formildende omstendigheter) skal presenteres GRUNDIG én gang (typisk i egne seksjoner) og deretter kun REFERERES kort i andre seksjoner. Bruk formuleringer som "som redegjort for ovenfor i punkt X" eller "de formildende omstendighetene gjort gjeldende i punkt 5".
+
+ALDRI gjenta den fulle argumentasjonen for et hovedargument i mer enn én seksjon.
+
+## VEDLEGG
+
+Under signaturblokken, list vedlegg som bør følge brevet. For hvert vedlegg, gi en kort `[MERKNAD TIL PARTNER]` med forklaring av hva vedlegget bør inneholde og hvorfor det styrker argumentasjonen.
 
 ## VIKTIG
 

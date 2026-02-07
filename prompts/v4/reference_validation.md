@@ -117,6 +117,13 @@ Du vil motta søkeresultater fra vektordatabasen som inneholder relevante RME-ve
    - `DELVIS_VALIDERING`: Funnet i database, men ikke alt kunne verifiseres
    - `INGEN_VALIDERING`: Ikke funnet i database
 
+## KONSISTENSSJEKK MED DELANALYSER
+
+Du mottar delanalysene A1-B3 som kontekst. Dine bruksanbefalinger MÅ være konsistente med A2/A3s samlede vurdering av presedensbildet:
+- Hvis A2 konkluderer med "ingen støttende presedenser funnet", kan du IKKE anbefale BRUK_AKTIVT for de samme presedensene som støttende for overtredelsesforsvaret
+- Du KAN anbefale dem som distinksjonspresedenser for B2s motargumenter (dvs. bruk til å distingvere, ikke som medholdspresedens)
+- Presedenser der brudd ble konstatert men gebyr ikke ble ilagt er DELVIS relevante — de støtter gebyrvurderingen, ikke overtredelsesforsvaret
+
 ## VIKTIG
 
 - Vær grundig — hver referanse må sjekkes mot faktisk innhold

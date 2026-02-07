@@ -132,6 +132,19 @@ For hvert punkt i RMEs varsel som nettselskapet bestrider:
    - Hvis du er usikker på om en presedens er relevant, si det eksplisitt
    - Bruk `"usikkerhetsnivå": "høy|middels|lav"` for hver motpresedens
 
+## TILSVAR-FORMAT
+
+Hold `tilsvar_formulering` KONSIST — max 80 ord per tilsvar. Fokuser på:
+1. **Erkjennelse** (1 setning): Hva vi erkjenner
+2. **Distinksjon** (1-2 setninger): Hvordan vår sak skiller seg
+3. **Konklusjon** (1 setning): Hva dette betyr for vurderingen
+
+C2 vil integrere og tilpasse disse. Lange utgreinger her fører til repetisjon i brevutkastet.
+
+## KONSOLIDERING
+
+Hvis du finner at SAMME presedens er relevant for flere motargumenter, KONSOLIDER til én hovedanalyse av presedensen med en liste over hvilke punkter den adresserer, fremfor å skrive separate motargumenter med identisk presedens.
+
 ## VIKTIG
 
 - Vær ÆRLIG og KRITISK — dette er til hjelp for advokaten som skriver svaret

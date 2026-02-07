@@ -61,6 +61,8 @@ Returner alltid JSON i følgende format:
       "notat": "Eventuell merknad om dette punktet"
     }
   ],
+  "svarfrist": "Dato for svarfrist hvis angitt i varselet, ellers null",
+  "svarfrist_sitat": "Eksakt sitat om fristen fra varselet",
   "varselet_gjelder": "Sammenfattet beskrivelse av hva RMEs varsel handler om",
   "rme_hovedkonklusjon": "RMEs overordnede konklusjon/foreslåtte vedtak",
   "nettselskap_hovedposisjon": "Nettselskapets overordnede posisjon/interesse",
