@@ -19,6 +19,18 @@ For hvert punkt RME tar stilling til i varselet:
 7. **Søkefraser** — Termer for å finne relevante presedenser som støtter nettselskapet
 8. **Prioritet for svar** — Hvor viktig er det å bestride dette punktet?
 
+## BREVTYPE-KLASSIFISERING (OBLIGATORISK)
+
+Klassifiser RME-brevet FØRST. Dette styrer strategien for hele svarbrevet.
+
+| Brevtype | Kjennetegn |
+|----------|------------|
+| **varsel_om_vedtak** | RME varsler at de vurderer å fatte vedtak. Nettselskapet har mulighet til å påvirke utfallet. |
+| **vedtak** | RME har fattet endelig vedtak. Nettselskapet kan klage til Energiklagenemnda. |
+| **gebyrvedtak** | RME har ilagt overtredelsesgebyr. Fokus på proporsjonalitet og gebyrutmåling. |
+| **paaleg** | RME pålegger tiltak eller ber om informasjon. |
+| **informasjonsbrev** | Generell informasjon eller oppfølging. |
+
 ## SAKSKATEGORIER
 
 Velg fra følgende kategorier basert på RME-vedtak og Energiklagenemnda-praksis:
@@ -61,6 +73,8 @@ Returner alltid JSON i følgende format:
       "notat": "Eventuell merknad om dette punktet"
     }
   ],
+  "brevtype": "varsel_om_vedtak|vedtak|gebyrvedtak|paaleg|informasjonsbrev",
+  "brevtype_begrunnelse": "Kort begrunnelse for klassifiseringen basert på brevets innhold",
   "svarfrist": "Dato for svarfrist hvis angitt i varselet, ellers null",
   "svarfrist_sitat": "Eksakt sitat om fristen fra varselet",
   "varselet_gjelder": "Sammenfattet beskrivelse av hva RMEs varsel handler om",
