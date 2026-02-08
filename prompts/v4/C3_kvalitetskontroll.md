@@ -90,6 +90,12 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - TREKK POENG (5 juridisk_presisjon) hvis A1 har STERK lovkilde-funn som ikke er brukt i brevutkastet
 - GI POENG (5 juridisk_presisjon) hvis brevutkastet systematisk integrerer lovbestemmelser under «Rettslig grunnlag» i hvert hovedpunkt
 
+### 12. Forarbeider-integrasjon
+- ADVARSEL hvis forarbeider > 0 treff OG A1 refererer til forarbeider med styrke STERK/MODERAT som IKKE er integrert i brevutkastet
+- TREKK 5 poeng (juridisk_presisjon) hvis STERK forarbeider-funn fra A1 ikke brukes i brevet
+- TREKK 5 poeng (juridisk_presisjon) hvis lovtekst bruker «bør» OG brevet mangler lovteknisk ordlydsanalyse
+- GI 5 poeng (juridisk_presisjon) hvis brevet systematisk integrerer forarbeider som formålstolkning
+
 ## SCORING
 
 Gi score 0-100 for hver dimensjon:

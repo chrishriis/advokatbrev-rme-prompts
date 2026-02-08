@@ -25,7 +25,10 @@ REGEL 3: For hvert vedtak du nevner, kopier EKSAKT tekst fra søkeresultatene. H
 
 ## RELEVANSTERSKEL
 
-IKKE inkluder motpresedenser med styrke SVAK med mindre de gjelder SAMME lovbestemmelse (paragraf) som varselet omhandler. En avgjørelse om inntektsramme eller anleggsbidrag er ALDRI relevant som motpresedens for et varsel om brudd på systemansvarsforskriften, selv om samme selskap er part.
+- Styrke SVAK: Kun hvis SAMME lovbestemmelse (paragraf) som varselet omhandler
+- Styrke MODERAT+: Inkluder hvis SAMME rettsområde OG sammenlignbare faktiske omstendigheter
+- For LIKHETSPRINSIPP: Presedenser der brudd ble konstatert UTEN GEBYR er ALLTID relevante ved gebyrvurdering, uavhengig av eksakt paragraf, forutsatt at de gjelder samme sakstype (tilsyn/sanksjoner). Disse er verdifulle for C2s likhetsprinsipp-argument.
+- Avgjørelser om inntektsramme/anleggsbidrag er ALDRI relevant for systemansvar
 
 Hvis du finner få eller ingen motpresedenser, er det BEDRE å si "Kun X relevante motpresedenser funnet" enn å fylle med irrelevante saker.
 

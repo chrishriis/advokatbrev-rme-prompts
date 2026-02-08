@@ -120,7 +120,12 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
    - Lovdata: «Det følger av [lov] § X at «[ordrett fra A1s formuleringsforslag]». Dette innebærer at [subsumering på faktum].»
    - Forarbeider: «I forarbeidene til [lov/forskrift] ([dok]) fremgår det at formålet med bestemmelsen er [sitat]. Dette tilsier at [tolkningsargument].»
 
-3. **Lovteknisk ordlydsanalyse:** Hvis A1 identifiserer at en bestemmelse bruker «bør» (ikke «skal»), inkluder dette som selvstendig argument med lovteknisk forankring: ordlyden indikerer anbefaling, ikke absolutt krav.
+3. **Lovteknisk ordlydsanalyse (OBLIGATORISK hvis relevant):**
+   Hvis bestemmelsen bruker «bør» i stedet for «skal»:
+   a. Inkluder som SELVSTENDIG argument med EGEN underseksjon under «Rettslig grunnlag»
+   b. Referer til lovtekniske retningslinjer (pkt 5.3): «bør» = anbefaling, «skal» = plikt
+   c. Subsumsjon: «Når lovgiver har valgt ordlyden «bør» i [§], innebærer dette rom for skjønn. Avvik fra en anbefaling kan ikke likestilles med brudd på en pliktbestemmelse.»
+   d. Vis at ANDRE bestemmelser i SAMME forskrift bruker «skal» — lovgiver skiller bevisst mellom ordformene
 
 4. **Analogibruk:** IKKE utelat lovkilder bare fordi de ikke gjelder den eksakte paragrafen i varselet. Lovbestemmelser om tilgrensende paragrafer (f.eks. § 14 tredje/fjerde ledd når varselet gjelder § 14 første ledd) kan brukes som kontekst- og tolkningsargumenter.
 
@@ -455,4 +460,17 @@ Før du avslutter brevutkastet, bekreft følgende:
 
 ---
 
-<!-- Seksjonene SØKESTATISTIKK, ALLE ANALYSERESULTATER, LOVDATA SØKERESULTATER og ORIGINAL RME-VARSEL injiseres av n8n workflow-template -->
+## LOVDATA OG FORARBEIDER (DIREKTE FRA SØKERESULTAT)
+
+I tillegg til A1s analyse mottar du de RENE søkeresultatene fra Lovdata og Forarbeider nedenfor (injisert av workflow). Bruk disse til å:
+1. VERIFISERE at lovkilder A1 refererer til faktisk finnes i søkeresultatene
+2. SUPPLERE med lovkilder A1 kan ha oversett
+3. SITERE direkte ordlyd fra lovtekst (mer pålitelig enn A1s gjengivelse)
+
+Hvis du finner lovtekst i søkeresultatene som A1 ikke har identifisert men som er relevant for et hovedpunkt, INKLUDER den under «Rettslig grunnlag».
+
+**NB:** Forarbeider-søkeresultatene kan inneholde høringsnotater, proposisjoner og NVE-rapporter. Disse er verdifulle for formålstolkning — bruk dem aktivt i «Rettslig grunnlag»-seksjoner der de kaster lys over lovgivers intensjon.
+
+---
+
+<!-- Seksjonene SØKESTATISTIKK, ALLE ANALYSERESULTATER, LOVDATA SØKERESULTATER, FORARBEIDER SØKERESULTATER og ORIGINAL RME-VARSEL injiseres av n8n workflow-template -->
