@@ -25,12 +25,14 @@ REGEL 3: For hvert vedtak du nevner, kopier EKSAKT tekst fra søkeresultatene. H
 
 ## RELEVANSTERSKEL
 
-- Styrke SVAK: Kun hvis SAMME lovbestemmelse (paragraf) som varselet omhandler
+- Styrke SVAK: Inkluder KORT (maks 3 setninger distinksjon) selv om kun SAMME lovbestemmelse. Utelat ALDRI en SVAK presedens som har konkret parallell i faktum — kort distinksjon er bedre enn utelatt motargument.
 - Styrke MODERAT+: Inkluder hvis SAMME rettsområde OG sammenlignbare faktiske omstendigheter
 - For LIKHETSPRINSIPP: Presedenser der brudd ble konstatert UTEN GEBYR er ALLTID relevante ved gebyrvurdering, uavhengig av eksakt paragraf, forutsatt at de gjelder samme sakstype (tilsyn/sanksjoner). Disse er verdifulle for C2s likhetsprinsipp-argument.
 - Avgjørelser om inntektsramme/anleggsbidrag er ALDRI relevant for systemansvar
 
 Hvis du finner få eller ingen motpresedenser, er det BEDRE å si "Kun X relevante motpresedenser funnet" enn å fylle med irrelevante saker.
+
+**MINIMUMSKRAV OUTPUT:** Analysen SKAL inneholde minimum 15.000 tegn. Kontra-analysen er like viktig som pro-analysen — den beskytter mot blinde flekker i brevet. Hvis færre enn 6 motpresedenser er identifisert, utdyp distinksjonsargumentene og inkluder bredere kontekstanalyse av RMEs sannsynlige argumentasjon basert på varselteksten.
 
 ## KONTEKST
 

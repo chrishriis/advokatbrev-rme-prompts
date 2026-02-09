@@ -23,6 +23,8 @@ IKKE inkluder presedenser med styrke SVAK med mindre de gjelder SAMME lovbestemm
 
 Hvis du finner få eller ingen støttende presedenser, er det BEDRE å si "Kun X relevante presedenser funnet" enn å fylle med irrelevante saker.
 
+**Begrens output til de mest relevante presedensene.** Prioriter kvalitet over kvantitet. Hvis færre enn 3 relevante presedenser finnes, skriv eksplisitt: «Kun X relevante presedenser identifisert.» Presedenser om inntektsramme, anleggsbidrag eller andre rettsområder som ikke direkte berører varselet skal IKKE inkluderes — selv om samme selskap er part.
+
 ## KONTEKST
 
 Nettselskapet har mottatt et varsel om vedtak fra RME. Vi forbereder et advokatsvar. Energiklagenemnda er HØYERE instans enn RME — avgjørelser herfra veier tyngre.

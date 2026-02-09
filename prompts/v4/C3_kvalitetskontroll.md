@@ -73,6 +73,7 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Inneholder brevet unødvendig repetisjon av samme argumenter?
 - Kunne seksjoner vært konsolidert?
 - ADVARSEL hvis brevet overstiger 15 sider for en enkel sak (1-2 punkter)
+- **KRITISK FEIL** hvis brevutkastet inneholder REDUNDANSSJEKKLISTE, intern sjekkliste, eller metadata etter signaturblokken. Slike interne verktøy skal ALDRI være synlige i output til partner.
 
 ### 10. Strategisk konsistens
 - Er brevets primære strategi konsistent med analysegrunnlagets risikovurdering?
@@ -86,15 +87,18 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 
 ### 11. Lovkilde-integrasjon
 - ADVARSEL hvis søkestatistikk viser lovdata > 5 treff OG A1s analyse identifiserer lovbestemmelser med styrke STERK/MODERAT som IKKE siteres i brevutkastet
-- ADVARSEL hvis A1s LOVKILDE-SAMMENDRAG har forarbeider-funn med styrke STERK som ikke refereres i brevutkastet
+- ADVARSEL hvis A1s LOVKILDE-SAMMENDRAG har forarbeider-funn med styrke STERK **eller MODERAT** som ikke refereres i brevutkastet
 - TREKK POENG (5 juridisk_presisjon) hvis A1 har STERK lovkilde-funn som ikke er brukt i brevutkastet
+- TREKK POENG (3 juridisk_presisjon) hvis A1 har MODERAT lovkilde-funn som ikke er brukt i brevutkastet
 - GI POENG (5 juridisk_presisjon) hvis brevutkastet systematisk integrerer lovbestemmelser under «Rettslig grunnlag» i hvert hovedpunkt
 
 ### 12. Forarbeider-integrasjon
-- ADVARSEL hvis forarbeider > 0 treff OG A1 refererer til forarbeider med styrke STERK/MODERAT som IKKE er integrert i brevutkastet
+- ADVARSEL hvis forarbeider > 0 treff OG A1 refererer til forarbeider med styrke STERK **eller MODERAT** som IKKE er integrert i brevutkastet
 - TREKK 5 poeng (juridisk_presisjon) hvis STERK forarbeider-funn fra A1 ikke brukes i brevet
+- TREKK 3 poeng (juridisk_presisjon) hvis MODERAT forarbeider-funn fra A1 ikke brukes i brevet
 - TREKK 5 poeng (juridisk_presisjon) hvis lovtekst bruker «bør» OG brevet mangler lovteknisk ordlydsanalyse
 - GI 5 poeng (juridisk_presisjon) hvis brevet systematisk integrerer forarbeider som formålstolkning
+- Sjekk EKSPLISITT om proposisjoner (f.eks. Prop. 43 L, Prop. 35 L) og høringsnotater identifisert av A1 er vurdert for bruk i brevutkastet. ADVARSEL hvis relevant proposisjon med styrke >= MODERAT er ignorert.
 
 ## SCORING
 

@@ -76,6 +76,8 @@ RME kjenner klientens historikk. Det er bedre å adressere dette proaktivt enn �
 
 **Konsernselskaper:** Dersom delanalysene identifiserer presedenser mot søsterselskaper i samme konsern, behandl disse proaktivt — RME kan argumentere for konsernansvar. Vis KONKRETE forskjeller i faktum mellom søsterkonsernets sak og foreliggende sak, og vis at korrigerende tiltak etter søsterkonsernets sak ikke dekket den svakheten som forårsaket nåværende overtredelse.
 
+**Konsernlæring-tidslinje (OBLIGATORISK):** Når et søsterselskap har TIDLIGERE vedtak med kort tidsavstand til nettselskapets overtredelse, INKLUDER eksplisitt tidslinje i brevet: [Søsterselskap vedtak dato] → [Nettselskapets overtredelse dato] → [Dager/måneder mellom]. Argumenter KONKRET for hvorfor søsterselskapets korrigerende tiltak ikke dekket den spesifikke svakheten som forårsaket nåværende overtredelse. RME vil bruke tidslinjen mot oss — det er bedre å adressere den proaktivt.
+
 **Selvrapporterte tilfeller:** Hvis nettselskapet har selvrapportert ytterligere tilfeller, adresser PROAKTIVT at dette kan tolkes som bevis på systemisk svikt. Argumenter for at det tvert imot viser at nye rutiner fungerer — problemene identifiseres og rapporteres.
 
 ### Regel 4: Konstruktiv tone ved prosessuelle innvendinger
@@ -106,6 +108,15 @@ Dersom A2/A3-analysene identifiserer flere DELVIS_STØTTENDE presedenser (brudd 
 
 Likhetsprinsippet er sterkere enn enkeltpresedenser brukt som formildende omstendigheter, fordi det pålegger RME en begrunningsplikt hvis de vil avvike fra egen praksis. Plasser etter presentasjonen av de sammenlignbare sakene, som en egen underseksjon eller som konklusjon på presedensgjennomgangen.
 
+### Regel 9: Stabilitet i risikovurdering
+
+Baser sannsynlighetsestimater i analysegrunnlaget på KONKRETE presedensutfall, ikke generell usikkerhet. For hvert utfall i risikovurderingen:
+1. List presedensene som understøtter estimatet (referanse + utfall)
+2. Begrunn HVORFOR dette utfallet er sannsynlig basert på presedensbildet
+3. Sannsynligheter UTEN presedensgrunnlag markeres som `[SVAKT BEGRUNNET]`
+
+Formålet er at en senior partner som leser to analysegrunnlag fra ulike runder ikke skal se vesentlig forskjellige sannsynlighetsestimater for identisk input. Estimater må være forankret i data, ikke i modellens generelle usikkerhet.
+
 ### Regel 8: Integrer lovkilde-argumenter fra A1 (OBLIGATORISK)
 
 A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVKILDE-SAMMENDRAG med ferdig formulerte lovkilde-argumenter. Brevutkastet SKAL systematisk integrere disse.
@@ -115,6 +126,8 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
 1. For HVERT hovedpunkt i brevutkastet, SJEKK A1s LOVKILDE-SAMMENDRAG:
    - Finnes lovbestemmelser med styrke STERK/MODERAT → SKAL integreres under «Rettslig grunnlag» i dette punktet
    - Finnes forarbeider med styrke STERK/MODERAT → SKAL integreres som formålstolkning
+   - Inkluder også MODERAT-styrke forarbeider og lovkilder — ikke bare STERK. Hvis A1 identifiserer forarbeider med styrke >= MODERAT, SKAL minst to integreres i brevutkastet.
+   - Forarbeider skal brukes OFFENSIVT — ikke bare for prosessargumenter (begrunnelsesplikt), men også for FORMÅLSARGUMENTER (lovgivers intensjon med bestemmelsen, proporsjonalitetskrav fra forarbeider). Eksempel: «Lovgivers formål med § 14 var å sikre informasjonsflyt, ikke å straffe formelle brudd uten konsekvenser.»
 
 2. **Formateringseksempler:**
    - Lovdata: «Det følger av [lov] § X at «[ordrett fra A1s formuleringsforslag]». Dette innebærer at [subsumering på faktum].»
@@ -122,7 +135,7 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
 
 3. **Lovteknisk ordlydsanalyse (OBLIGATORISK hvis relevant):**
    Hvis bestemmelsen bruker «bør» i stedet for «skal»:
-   a. Inkluder som SELVSTENDIG argument med EGEN underseksjon under «Rettslig grunnlag»
+   a. Inkluder som DEL AV rettslig-grunnlag-seksjonen (ikke som selvstendig underseksjon) med maks 2-3 setninger. Unngå at ordlydsanalysen får uforholdsmessig mye plass.
    b. Referer til lovtekniske retningslinjer (pkt 5.3): «bør» = anbefaling, «skal» = plikt
    c. Subsumsjon: «Når lovgiver har valgt ordlyden «bør» i [§], innebærer dette rom for skjønn. Avvik fra en anbefaling kan ikke likestilles med brudd på en pliktbestemmelse.»
    d. Vis at ANDRE bestemmelser i SAMME forskrift bruker «skal» — lovgiver skiller bevisst mellom ordformene
@@ -305,7 +318,7 @@ Med vennlig hilsen
 | Middels gebyr | [ESTIMAT] ca. X% | 500 000 – 1 000 000 kr |
 | Høyt gebyr | [ESTIMAT] ca. X% | Over 1 000 000 kr |
 
-Baser estimatene på delanalysenes presedenser der gebyrstørrelser er nevnt. Hvis ingen gebyrstørrelser finnes i presedensene, skriv «Utilstrekkelig datagrunnlag for beløpsestimat» og forklar hvorfor.
+Baser estimatene på delanalysenes presedenser der gebyrstørrelser er nevnt. Hvis presedenser nevner konkrete gebyrstørrelser, INKLUDER disse som referansepunkter. Eksempel: «I [ref] ble [nettselskap] ilagt gebyr på [beløp] for [type brudd].» Tomt gebyrspenn uten referansepunkter er utilstrekkelig — søk aktivt i delanalysene etter nevnte beløp. Hvis ingen gebyrstørrelser finnes i presedensene, skriv «Utilstrekkelig datagrunnlag for presist beløpsestimat» og forklar hvorfor.
 
 ---
 
@@ -448,7 +461,9 @@ Alt FØR separatoren er brevutkastet. Alt ETTER er analysegrunnlaget.
 
 ---
 
-## REDUNDANSSJEKKLISTE (OBLIGATORISK)
+## REDUNDANSSJEKKLISTE (INTERNT VERKTØY — ALDRI I OUTPUT)
+
+**VIKTIG:** Redundanssjekklisten er et INTERNT verktøy for din egen kvalitetskontroll. Den skal ALDRI inkluderes i output. Alt etter signaturblokken og vedlegg er slutten på DOKUMENT 1. Sjekklisten brukes KUN mentalt — ikke skriv den ut.
 
 Før du avslutter brevutkastet, bekreft følgende:
 - [ ] Korrigerende tiltak presenteres GRUNDIG i maks én seksjon
