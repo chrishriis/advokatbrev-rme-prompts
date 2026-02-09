@@ -240,4 +240,50 @@ Formel: total = (2*(database_verifisering + faktisk_korrekthet + kildesporbarhet
 
 ---
 
+## VERKTØY FOR DATABASEOPPSLAG
+
+Du har tilgang til et PostgreSQL-verktøy for spot-sjekking av brevutkastet. Verktøyet er et SUPPLEMENT til den forhåndsinjiserte DATABASE-VERIFISERINGEN — ikke en erstatning.
+
+### Tilgjengelige funksjoner:
+
+| Funksjon | Bruk | Eksempel |
+|----------|------|---------|
+| `get_chunk_by_id('chunk_id')` | Hent én chunk for sitatverifisering | `SELECT * FROM get_chunk_by_id('rme_chunk_12345')` |
+| `get_rme_vedtak_full('vedtak_ref')` | Hent full vedtakstekst | `SELECT * FROM get_rme_vedtak_full('201804895-17')` |
+| `get_energiklage_full('saksnummer')` | Hent full Energiklage-tekst | `SELECT * FROM get_energiklage_full('2025/1472')` |
+| `get_lovdata_paragraf('lov_kode', 'paragraf')` | Hent full lovtekst | `SELECT * FROM get_lovdata_paragraf('energiloven', '10-7')` |
+| `get_forarbeider_full('dokument_id')` | Hent full forarbeider-tekst | `SELECT * FROM get_forarbeider_full('NOU-2022-6')` |
+| `search_company_history('selskapsnavn')` | Finn vedtak mot selskap (metadata) | `SELECT * FROM search_company_history('ELVIA')` |
+| `verify_refs_batch(rme[], energi[], lov[], forarb[])` | Batch-verifiser referanser | Se C1-eksempel |
+
+### OBLIGATORISKE TRIGGERE for verktøybruk
+
+Du MÅ bruke databaseverktøyet i følgende situasjoner:
+
+1. **Sitatavvik**: Et sitat i brevutkastet ser upresist ut (parafrasert, forkortet, eller endret ordlyd) → Slå opp original chunk/vedtak og verifiser
+2. **Score-avvik**: Analysegrunnlagets scorer avviker kraftig fra brevinnholdet (f.eks. score 85 på juridisk_presisjon men brevet har tydelige svakheter) → Spot-sjekk den sterkeste presedensen
+3. **Styrke-oppgradering**: En presedens brukes som STERK argument i brevet, men delanalysene klassifiserer den som SVAK eller MODERAT → Slå opp full tekst og verifiser styrken
+4. **[MANUELT OPPSLAG]-markering**: Hvis brevutkastet eller analysegrunnlaget inneholder presedenser markert med `[MANUELT OPPSLAG]` → Verifiser at de faktisk finnes i databasen
+
+Utover triggerne: Bruk FRIVILLIG for ytterligere 1-2 stikkprøver av sitater.
+
+### KONTROLL AV [MANUELT OPPSLAG]-MERKING (KRITISK)
+
+C2 har tilgang til databaseverktøy og kan finne presedenser som IKKE er i delanalysene (A1-B3). Slike presedenser SKAL være markert med `[MANUELT OPPSLAG — IKKE I AUTOMATISK SØK]`.
+
+**Sjekk EKSPLISITT:**
+1. Gå gjennom alle presedenser i brevutkastet
+2. For hver presedens: Finnes den i DELANALYSENE (A1-B3)?
+3. Hvis NEI og den IKKE er markert med [MANUELT OPPSLAG] → rapporter som **KRITISK FEIL**
+4. Denne sjekken er en del av hallusinerings-krysssjekken og skal rapporteres i `etterrettelighets_flagg`
+
+### Regler for verktøybruk
+
+1. **KUN SELECT-spørringer** — aldri skriveoperasjoner
+2. **Sitatpresisjon**: Hvis du finner avvik mellom sitater i brevet og original tekst i databasen, rapporter dette som KRITISK FEIL
+3. **Supplement til db_verification**: Verktøyene erstatter IKKE den forhåndsinjiserte DATABASE-VERIFISERINGEN. De er et tillegg for dypere spot-sjekker
+4. **Referanseformat**: RME: `201804895-17`. Energiklage: `2025/1472`. Lovdata: `'energiloven', '10-7'`. Forarbeider: `'NOU-2022-6'`
+
+---
+
 <!-- Seksjonene SØKESTATISTIKK, DATABASE-VERIFISERING, SYNTESEANALYSE (C2), DELANALYSER, RME-VARSEL og SØKERESULTATER injiseres av n8n workflow-template -->

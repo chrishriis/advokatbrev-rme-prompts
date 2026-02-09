@@ -142,4 +142,33 @@ Du mottar også de individuelle delanalysene (A1-B3) for krysssjekk. Bruk disse 
 
 ---
 
+## VERKTØY FOR DATABASEOPPSLAG
+
+Du har tilgang til et PostgreSQL-verktøy som lar deg slå opp rådata direkte i databasen. Bruk dette til å:
+
+1. **Verifisere sitater**: Slå opp en spesifikk chunk med `get_chunk_by_id` for å kontrollere at sitater i delanalysene er ordrett korrekte
+2. **Sjekke kontekst**: Hent full vedtakstekst med `get_rme_vedtak_full` eller `get_energiklage_full` for å verifisere at presedenser er brukt i riktig kontekst
+3. **Bekrefte lovhenvisninger**: Slå opp lovparagrafer for å verifisere at lovteksten er riktig gjengitt i delanalysene
+4. **Re-verifisere referanser**: Bruk `verify_refs_batch` for å dobbeltsjekke referanser du er usikker på
+
+### Tilgjengelige funksjoner (bruk som SELECT-spørringer):
+
+| Funksjon | Bruk | Eksempel |
+|----------|------|---------|
+| `get_chunk_by_id('chunk_id')` | Hent én spesifikk chunk | `SELECT * FROM get_chunk_by_id('rme_chunk_12345')` |
+| `get_rme_vedtak_full('vedtak_ref')` | Hent full vedtakstekst | `SELECT * FROM get_rme_vedtak_full('201804895-17')` |
+| `get_energiklage_full('saksnummer')` | Hent full Energiklage-tekst | `SELECT * FROM get_energiklage_full('2025/1472')` |
+| `get_lovdata_paragraf('lov_kode', 'paragraf')` | Hent full lovtekst | `SELECT * FROM get_lovdata_paragraf('energiloven', '10-7')` |
+| `get_forarbeider_full('dokument_id')` | Hent full forarbeider-tekst | `SELECT * FROM get_forarbeider_full('NOU-2022-6')` |
+| `verify_refs_batch(rme[], energi[], lov[], forarb[])` | Batch-verifiser referanser | `SELECT * FROM verify_refs_batch(ARRAY['201804895-17'], ARRAY[]::text[], ARRAY[]::text[], ARRAY[]::text[])` |
+
+### Regler for verktøybruk
+
+1. **KUN SELECT-spørringer** — aldri INSERT, UPDATE, DELETE eller andre skriveoperasjoner
+2. **Prioriter `get_chunk_by_id`** når delanalysene oppgir `dokument_id` — dette er mer presist og sparer kontekst enn å hente hele vedtaket
+3. **Verifisering, ikke oppdagelse**: Verktøyene brukes til å VERIFISERE referanser som allerede er i delanalysene. Ikke let etter nye presedenser
+4. **Referanseformat**: RME-referanser er på formatet `201804895-17` (tall-bindestrek-tall). Energiklage-referanser er `2025/1472` (år/nummer)
+
+---
+
 <!-- Seksjonene RME-VARSELET, REFERANSER FRA VARSELET, DELANALYSER og SØKERESULTATER injiseres av n8n workflow-template -->
