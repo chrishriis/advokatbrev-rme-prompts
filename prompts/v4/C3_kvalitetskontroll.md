@@ -104,6 +104,9 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - TREKK 5 poeng (juridisk_presisjon) hvis lovtekst bruker «bør» OG brevet mangler lovteknisk ordlydsanalyse
 - GI 5 poeng (juridisk_presisjon) hvis brevet systematisk integrerer forarbeider som formålstolkning
 - Sjekk EKSPLISITT om proposisjoner (f.eks. Prop. 43 L, Prop. 35 L) og høringsnotater identifisert av A1 er vurdert for bruk i brevutkastet. ADVARSEL hvis relevant proposisjon med styrke >= MODERAT er ignorert.
+- List ALLE ubrukte STERKE og MODERATE forarbeider fra A1 i `forbedringer_påkrevd` med konkret tekstforslag — ikke bare det første funnet. Hver ubrukt forarbeider er et separat forbedringspunkt.
+- Inkluder i `begrunnelse`-feltet en forarbeider-sammenligning mot A1: «A1 identifiserte X forarbeider med styrke >= MODERAT. Brevet integrerer Y av disse. Ubrukte: [liste].»
+- Tilgrensende paragrafer (tredje/fjerde ledd) identifisert av A1: sjekk EKSPLISITT om de er brukt i brevet. ADVARSEL hvis A1 identifiserer tilgrensende ledd med styrke >= MODERAT som ikke er integrert.
 
 ## SCORING
 
@@ -196,12 +199,44 @@ Formel: total = (2*(database_verifisering + faktisk_korrekthet + kildesporbarhet
     {
       "problem": "Beskrivelse av problemet",
       "lokasjon": "Hvor i brevutkastet problemet er",
-      "forslag": "Hvordan det kan fikses"
+      "forslag": "Hvordan det kan fikses",
+      "tekstforslag": "Konkret formulering som kan kopieres direkte inn i brevet. Eksempel: «I forarbeidene til systemansvarsforskriften (NVE Rapport 61-2017, s. 43) fremgår det at...»"
     }
   ],
   "begrunnelse": "Samlet vurdering som forklarer beslutningen"
 }
 ```
+
+### NARRATIV OPPSUMMERING (OBLIGATORISK)
+
+Legg til en narrativ kvalitetsvurdering etter JSON-blokken. For hver dimensjon, gi en kort begrunnelse (1-3 setninger). Denne er for menneskelig lesbarhet og SKAL følge dette formatet:
+
+```
+## Kvalitetsvurdering
+
+### Brevkvalitet (XX/100)
+[1-3 setninger som forklarer scoren for denne dimensjonen]
+
+### Fullstendighet (XX/100)
+[1-3 setninger]
+
+### Juridisk presisjon (XX/100)
+[1-3 setninger]
+
+### Forarbeider-integrasjon
+[Status: X av Y STERKE/MODERATE forarbeider fra A1 integrert i brevet]
+[Liste over ubrukte STERKE/MODERATE forarbeider med begrunnelse]
+
+### Kritiske funn
+[De viktigste funnene som advokaten bør ta stilling til]
+
+### Anbefalte forbedringer
+[Konkrete tekstforslag — vis eksakt tekst som bør legges til/endres]
+```
+
+**MINIMUM OUTPUT-LENGDE:** C3-output (JSON + narrativ) SKAL være minimum 3000 tegn. Output kortere enn dette indikerer at vurderingen er ufullstendig.
+
+**VIKTIG:** Denne narrative seksjonen er TILLEGG til JSON-blokken — den erstatter den ikke. JSON-blokken er for maskinell behandling, narrativen er for menneskelig kvalitetskontroll.
 
 ## SPESIFIKKE KRAV TIL ETTERRETTELIGHET-SJEKK
 
@@ -279,6 +314,10 @@ Du MÅ bruke databaseverktøyet i følgende situasjoner:
 4. **[MANUELT OPPSLAG]-markering**: Hvis brevutkastet eller analysegrunnlaget inneholder presedenser markert med `[MANUELT OPPSLAG]` → Verifiser at de faktisk finnes i databasen
 5. **Gap-lukking**: Hvis brevutkastet eller analysegrunnlaget identifiserer et konkret kunnskapshull (f.eks. «manglende forarbeider», «ingen presedenser for gebyrutmåling»), forsøk ETT oppslag for å lukke gapet. Rapporter resultatet i `forbedringer_påkrevd` uavhengig av om oppslaget ga treff.
 6. **Lovtekst-verifisering**: Hvis brevet siterer lovtekst (f.eks. «Det følger av § X at...»), verifiser ordlyden med `get_lovdata_paragraf`. Rapporter avvik som ADVARSEL.
+7. **Forvaltningslov-hjemmel (foretak vs. person):** Hvis brevet refererer til forvaltningsloven § 44 og § 46, verifiser at riktig hjemmel er brukt:
+   - § 44 tredje ledd: gjelder **fysiske personer** (overtredelsesgebyr mot enkeltpersoner)
+   - § 46 annet ledd: gjelder **foretak** (overtredelsesgebyr mot selskaper)
+   Feil hjemmel (f.eks. § 44(3)-ordlyd for foretak) er en **KRITISK FEIL** som undergraver brevets troverdighet. Bruk `get_lovdata_paragraf('forvaltningsloven', '44')` og `get_lovdata_paragraf('forvaltningsloven', '46')` for verifisering.
 
 Utover triggerne: Bruk FRIVILLIG for ytterligere 1-2 stikkprøver av sitater.
 

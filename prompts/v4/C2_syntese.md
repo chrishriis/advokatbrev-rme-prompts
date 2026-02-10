@@ -37,11 +37,11 @@ Produser **to separate dokumenter** basert på analysene:
 
 ### DOKUMENT 1: UTKAST TIL ADVOKATSVAR (hovedprodukt)
 
-Et formelt juridisk brev som en senior partner kan revidere og sende til RME på vegne av nettselskapet.
+Et formelt juridisk brev som en senior partner kan revidere og sende til RME på vegne av nettselskapet. Inkluderer formålstolkning som punkt under «Rettslig grunnlag» når forarbeider >= MODERAT.
 
 ### DOKUMENT 2: ANALYSEGRUNNLAG (internt arbeidsnotat)
 
-En analyserapport med risikovurdering, karakterkort og anbefalinger som advokaten bruker som internt grunnlag.
+En analyserapport med risikovurdering, karakterkort, ubrukte forarbeider-rapportering og anbefalinger som advokaten bruker som internt grunnlag.
 
 ---
 
@@ -132,6 +132,7 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
    - Finnes forarbeider med styrke STERK/MODERAT → SKAL integreres som formålstolkning
    - Inkluder også MODERAT-styrke forarbeider og lovkilder — ikke bare STERK. Hvis A1 identifiserer forarbeider med styrke >= MODERAT, SKAL minst to integreres i brevutkastet.
    - Forarbeider skal brukes OFFENSIVT — ikke bare for prosessargumenter (begrunnelsesplikt), men også for FORMÅLSARGUMENTER (lovgivers intensjon med bestemmelsen, proporsjonalitetskrav fra forarbeider). Eksempel: «Lovgivers formål med § 14 var å sikre informasjonsflyt, ikke å straffe formelle brudd uten konsekvenser.»
+   - STERKE forarbeider fra A1 skal brukes som BÆRENDE argumentstøtte i brevets rettslige argumentasjon — ikke bare som tilleggsreferanser. Hvis A1 klassifiserer en forarbeider som STERK, skal den siteres direkte med sidetall/avsnitt (f.eks. «(s. 43)» eller «(avsnitt 45)»).
 
 2. **Formateringseksempler:**
    - Lovdata: «Det følger av [lov] § X at «[ordrett fra A1s formuleringsforslag]». Dette innebærer at [subsumering på faktum].»
@@ -144,11 +145,20 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
    c. Subsumsjon: «Når lovgiver har valgt ordlyden «bør» i [§], innebærer dette rom for skjønn. Avvik fra en anbefaling kan ikke likestilles med brudd på en pliktbestemmelse.»
    d. Vis at ANDRE bestemmelser i SAMME forskrift bruker «skal» — lovgiver skiller bevisst mellom ordformene
 
-4. **Analogibruk:** IKKE utelat lovkilder bare fordi de ikke gjelder den eksakte paragrafen i varselet. Lovbestemmelser om tilgrensende paragrafer (f.eks. § 14 tredje/fjerde ledd når varselet gjelder § 14 første ledd) kan brukes som kontekst- og tolkningsargumenter.
+4. **Analogibruk og tilgrensende ledd (OBLIGATORISK):** IKKE utelat lovkilder bare fordi de ikke gjelder den eksakte paragrafen i varselet. Lovbestemmelser om tilgrensende paragrafer (f.eks. tredje/fjerde ledd når varselet gjelder første ledd) SKAL brukes som kontekst- og tolkningsargumenter. Spesielt:
+   - Tilgrensende ledd som plasserer ansvar eller plikter hos andre aktører → bruk for å vise at regelverket fordeler ansvar bredere enn kun den regulerte parten
+   - Tilgrensende ledd som regulerer prosedyrekrav, frister eller vilkår → bruk som medansvarsargument der motparten har unnlatt å oppfylle sine plikter
 
 5. **Hvis A1 rapporterer 0 treff totalt** (lovdata_treff=0 OG forarbeider_treff=0): Skriv i analysegrunnlaget under Begrensninger: «Ingen lovkilder identifisert i automatisert søk. Partner bør vurdere manuell gjennomgang av [relevante lover].»
 
-6. **§ 28a-presisering**: Hvis § 28a refereres for å underbygge ansvar: Presiser EKSPLISITT at § 28a dekker §§ 5, 6, 8, 8a, 8b, 14a, 21 og 22 — IKKE den aktuelle paragrafen direkte (med mindre den er blant disse). Formuler argumentet som analogisk: «Selv om § 28a ikke direkte dekker § [X], illustrerer den lovgivers intensjon om at systemansvarlig har ansvar for klare retningslinjer. Det direkte rettsgrunnlaget for dette argumentet er § [X] tredje/fjerde ledd.»
+6. **§ 28a-integrasjon (SKAL ved STERK)**: Hvis A1 klassifiserer § 28a som STERK eller MODERAT, SKAL den integreres i brevutkastet. Presiser EKSPLISITT at § 28a dekker §§ 5, 6, 8, 8a, 8b, 14a, 21 og 22 — IKKE den aktuelle paragrafen direkte (med mindre den er blant disse). Formuler argumentet som analogisk: «Selv om § 28a ikke direkte dekker § [X], illustrerer den lovgivers intensjon om at systemansvarlig har ansvar for klare retningslinjer. Det direkte rettsgrunnlaget for dette argumentet er § [X] tredje/fjerde ledd.»
+
+7. **A1-absorpsjonskontroll (OBLIGATORISK):** Før brevutkastet avsluttes, gå gjennom A1s LOVKILDE-SAMMENDRAG og verifiser:
+   - [ ] Alle STERKE lovbestemmelser er integrert i brevet
+   - [ ] Alle STERKE forarbeider er sitert med sidetall/avsnitt
+   - [ ] Minst to MODERAT-styrke forarbeider er integrert
+   - [ ] Formålstolkningsargumenter fra forarbeider er brukt offensivt
+   Denne kontrollen er INTERN — inkluder den ALDRI i output.
 
 ---
 
@@ -229,7 +239,7 @@ For HVERT punkt RME tar stilling til, skriv en seksjon med:
 **Nettselskapets syn:**
 1. **Rettslig grunnlag:**
    a. Lovbestemmelser som støtter nettselskapets posisjon [Bruk A1s LOVKILDE-SAMMENDRAG. Siter ordlyd der den støtter nettselskapets tolkning. Format: «Det følger av [lov] § X at «[ordrett sitat]». Dette innebærer at [subsumering].»]
-   b. Forarbeider (hvis identifisert av A1) [Bruk A1s formuleringsforslag. Format: «I forarbeidene til [lov/forskrift] ([dok]) fremgår det at [sitat]. Dette tilsier at [tolkningsargument].» Utelat hvis A1 ikke identifiserte relevante forarbeider for dette punktet.]
+   b. Forarbeider og formålstolkning (OBLIGATORISK hvis A1 identifiserer forarbeider >= MODERAT) [Bruk A1s formuleringsforslag. Format: «I forarbeidene til [lov/forskrift] ([dok], s. [X]) fremgår det at formålet med bestemmelsen er «[direkte sitat]» (s. [X], avsnitt [Y]). [Nettselskapets navn] anfører at dette formålet [ikke ble vesentlig skadelidende / ble ivaretatt gjennom andre mekanismer / tilsier en mildere vurdering] fordi [konkret subsumering].» Utelat hvis A1 ikke identifiserte relevante forarbeider for dette punktet.]
 2. **Praksis:** Vis til relevante vedtak/avgjørelser
    - Format: "I vedtak [ref] av [dato] la RME til grunn at «[eksakt sitat]»"
 3. **Subsumering:** Anvend rettsgrunnlaget på faktum
@@ -248,10 +258,6 @@ Dersom RME varsler om eller har ilagt overtredelsesgebyr, INKLUDER en dedikert p
 Ikke gjenta argumenter ordrett — bruk kryssreferanser til tidligere seksjoner. Formålet er å samle proporsjonalitetsvurderingen på ETT sted.
 
 5. **Forvaltningsloven § 44-momenter**: Ved overtredelsesgebyr, vurder om brevutkastet bør gjennomgå § 44 tredje ledd-momentene systematisk: (a) overtredelsens omfang og virkninger, (b) fordeler/gevinster ved overtredelsen, (c) graden av skyld, (d) om overtrederen har hatt mulighet til å forhindre overtredelsen, (e) overtrederens økonomiske evne. En strukturert gjennomgang av disse momentene styrker proporsjonalitetsargumentet.
-
-### Eventuelt: Anmodning om innsyn i gebyrpraksis (valgfritt)
-
-Hvis relevant, kan brevet inkludere en anmodning til RME om innsyn i gebyrpraksis og utmålingskriterier. Plasser som egen underseksjon i brevteksten — IKKE som påstand. Eksempel: «[Nettselskapet] ber om at RME redegjør for praksis for ileggelse av overtredelsesgebyr, herunder hvilke kriterier som anvendes for utmåling.»
 
 ### N+1. Oppsummering
 
@@ -413,6 +419,31 @@ Denne seksjonen er ALLTID påkrevd. List presedenser fra B-analysene som svekker
 
 ---
 
+## Forarbeider brukt vs. tilgjengelige (OBLIGATORISK)
+
+Inkluder en tabell som viser:
+
+| Forarbeider fra A1 | Styrke | Brukt i brevet? | Begrunnelse for eksklusjon |
+|---------------------|--------|-----------------|---------------------------|
+| [dok] (s. X) | STERK | Ja/Nei | [Strategisk valg / Ikke relevant for sakstype / ...] |
+
+Alle STERKE og MODERATE forarbeider fra A1 SKAL listes — inkludert ubrukte forarbeider med begrunnelse. Advokaten trenger denne oversikten for å vurdere om eksklueringene var riktige.
+
+## Rettslig grunnlag — splittet scoring
+
+Under karakterkortet, split «Rettslig grunnlag»-scoren i to:
+- **Lovtolkning** (X/10): Vurdering av ordlydsanalyse og lovteknisk argumentasjon
+- **Forarbeiderbruk** (X/10): Vurdering av integrasjon og bruk av forarbeider
+
+## Konsernlæring — håndteringsstrategi
+
+Hvis konsernanalysen avdekker at RME har gitt varsler til relaterte selskaper, inkluder en eksplisitt håndteringsanbefaling:
+- Hva varselet inneholder
+- Hvordan brevutkastet adresserer det
+- Alternativ strategi hvis advokaten ønsker en annen tilnærming
+
+---
+
 ## Analysegrunnlag og begrensninger
 
 Bruk SØKESTATISTIKK-seksjonen og delanalysenes kildebruk-rapportering for å fylle ut denne tabellen. Alle fire kilder ble søkt. Hvis en kilde ga 0 relevante treff, skriv "0 relevante" — IKKE "Ikke søkt".
@@ -480,6 +511,24 @@ Velg de 3-4 sterkeste presedensene for brevet. Releger resten til analysegrunnla
 ## VEDLEGG
 
 Under signaturblokken, list vedlegg som bør følge brevet. For hvert vedlegg, gi en kort `[INTERN MERKNAD — FJERNES FØR INNSENDING: ...]` med forklaring av hva vedlegget bør inneholde og hvorfor det styrker argumentasjonen.
+
+## STRUKTURELLE VIRKEMIDLER (C2-krav)
+
+**Sammenligningstabeller (OBLIGATORISK ved presedensdistinksjon):** Når brevutkastet distinguerer mellom nettselskapets sak og en negativ presedens (f.eks. Andøy Energi), SKAL distinksjonene presenteres som tabell — IKKE som nummererte punkter. Tabell med momenter (kolonne 1), presedens-verdier (kolonne 2) og nettselskapet (kolonne 3) er mer overbevisende og lettere å lese for beslutningstaker.
+
+**Innsynsanmodning (SKAL ved gebyr-/utmålingssaker):** Hvis varselet inneholder gebyr eller utmåling, SKAL brevet anmode om innsyn i gebyrpraksis:
+- Hvilke sammenlignbare saker som har resultert i gebyr de siste fem år
+- Begrunnelse for eventuelt strengere behandling enn sammenlignbare saker
+- Kriterier brukt for gebyrutmåling
+Plasser som egen underseksjon — IKKE som del av påstanden.
+
+**fvl. § 25 begrunnelsesplikt:** Hvis RME ikke har begrunnet en skjønnsvurdering (f.eks. «alvorlig» overtredelse uten kriterier), inkluder forvaltningsloven § 25 som argument: «RME har ikke redegjort for hvilke kriterier som er lagt til grunn for vurderingen av [X]. Etter forvaltningsloven § 25 skal begrunnelsen nevne de faktiske forhold som vedtaket bygger på.»
+
+**Medansvarsargument (SKAL ved medansvar):** Ved saker der systemansvarlig, reguleringsmyndighet eller annen motpart har medansvar for uklarhet (f.eks. uklare retningslinjer, manglende informasjon), SKAL dette adresseres eksplisitt som et eget argument. Formuler som: «[Motpart] har selv et ansvar for [X], jf. § [Y] tredje/fjerde ledd. Det er urimelig å ilegge gebyr for brudd som delvis skyldes [motparts] unnlatelse.»
+
+**Proaktiv adressering av RME-varsel til konsernselskaper:** Hvis delanalysene avdekker at RME har gitt eksplisitt varsel til konsernselskaper (f.eks. «fremtidige gebyrkonsekvenser»), SKAL brevutkastet adressere dette proaktivt — ikke la det bli en overraskelse i vedtaket. Forklar forskjellen mellom konsernets generelle varsling og den konkrete sakens omstendigheter.
+
+---
 
 ## VIKTIG
 

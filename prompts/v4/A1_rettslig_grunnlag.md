@@ -85,9 +85,11 @@ Inkluder ALLE lovbestemmelser som kan styrke nettselskapets posisjon, også de s
 
 ### Forarbeider til bruk i brevutkastet:
 
-| Dokument | Relevant seksjon | Styrke | Formuleringsforslag for brevet |
-|----------|-----------------|--------|-------------------------------|
-| [dok] | [seksjon] | STERK/MODERAT/SVAK | «I forarbeidene til [lov/forskrift] ([dok]) fremgår det at formålet med bestemmelsen er [sitat/referanse]. Dette tilsier at [tolkningsargument].» |
+| Dokument | Relevant seksjon (side/avsnitt) | Styrke | Formuleringsforslag for brevet |
+|----------|-------------------------------|--------|-------------------------------|
+| [dok] | [seksjon] (s. X, avsnitt Y) | STERK/MODERAT/SVAK | «I forarbeidene til [lov/forskrift] ([dok], s. [X]) fremgår det at formålet med bestemmelsen er «[direkte sitat]» (s. [X], avsnitt [Y]). Dette tilsier at [tolkningsargument].» |
+
+- **Sidetall/avsnitt er OBLIGATORISK** i forarbeider-tabellen. Formuleringsforslaget SKAL inkludere eksakt kildereferanse, f.eks. «(s. 43)» eller «(avsnitt 44-45)». Uten sidetall kan C2 ikke produsere sporbare sitater.
 
 Prioriter spesielt proposisjoner om innføring eller endring av overtredelsesgebyr-bestemmelser (typisk energiloven § 10-7) — disse inneholder ofte formålsuttalelser om proporsjonalitet og skyldkrav som er svært relevante for gebyrvurdering.
 
