@@ -72,7 +72,8 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Er brevutkastet proporsjonalt med sakens kompleksitet?
 - Inneholder brevet unødvendig repetisjon av samme argumenter?
 - Kunne seksjoner vært konsolidert?
-- ADVARSEL hvis brevet overstiger 15 sider for en enkel sak (1-2 punkter)
+- Ordgrenser (matchende C2): Enkel sak max 2500 ord, middels max 3500 ord, kompleks max 5000 ord
+- ADVARSEL hvis brevet overstiger ordgrensen for sakens kompleksitetsklasse
 - **KRITISK FEIL** hvis brevutkastet inneholder REDUNDANSSJEKKLISTE, intern sjekkliste, eller metadata etter signaturblokken. Slike interne verktøy skal ALDRI være synlige i output til partner.
 
 ### 10. Strategisk konsistens
@@ -237,6 +238,14 @@ Formel: total = (2*(database_verifisering + faktisk_korrekthet + kildesporbarhet
 - Sjekk spesielt at brevet er fullstendig — alle RME-punkter MÅ adresseres
 - **SPESIELT VIKTIG: Avslør enhver "hallusinering" av presedenser eller sitater**
 - **NYTT: Vurder om brevet er egnet som faktisk advokatsvar — format, tone, profesjonalitet**
+
+---
+
+## PRIORITERING AV OUTPUT (KRITISK)
+
+Fullstendig scoring og vurdering har ABSOLUTT PRIORITET over verktøybruk. Bruk maks 5 verktøy-kall totalt. Din primære oppgave er å produsere komplett JSON-output med alle 11 scoring-dimensjoner, etterrettelighets-flagg, brevformat-sjekk og begrunnelse. Verktøy-kall er et SUPPLEMENT for stikkprøver — ikke en erstatning for analytisk vurdering.
+
+Prioriter scoring over verktøybruk. Hvis du er usikker på om du trenger et oppslag, dropp det og baser vurderingen på de forhåndsinjiserte søkeresultatene og delanalysene. En ufullstendig scoring med mange oppslag er verre enn en fullstendig scoring med få oppslag.
 
 ---
 

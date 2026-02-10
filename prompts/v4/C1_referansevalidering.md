@@ -124,6 +124,10 @@ Når du anbefaler bruk av presedenser, vær presis om HVA de støtter:
 - Skille mellom presedenser som kan brukes som medholdspresedens (overtredelse forelå ikke) vs. distinksjonspresedenser (brukes til å distingvere vår sak fra en motpresedens)
 - En presedens med `BRUK_AKTIVT` bør kun anbefales hvis den direkte støtter nettselskapets posisjon på det aktuelle rettsspørsmålet
 
+## LENGDEBEGRENSNING (KRITISK)
+
+Hold outputen kompakt — maks 150 linjer totalt. For hver seksjon (validerte_referanser, lov_referanser, oppsummering, etc.), bruk maks 5 linjer per referanse. Prioriter de viktigste funnene og hold kommentarene korte. C2 og C3 som mottar din output har begrenset kontekstvindu — overflødig detalj i valideringen fortrenger plass for selve brevutformingen.
+
 ## VIKTIG
 
 - Vær grundig — hver referanse må sjekkes mot faktisk innhold
