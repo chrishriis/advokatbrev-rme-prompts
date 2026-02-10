@@ -89,6 +89,8 @@ Inkluder ALLE lovbestemmelser som kan styrke nettselskapets posisjon, også de s
 |----------|-----------------|--------|-------------------------------|
 | [dok] | [seksjon] | STERK/MODERAT/SVAK | «I forarbeidene til [lov/forskrift] ([dok]) fremgår det at formålet med bestemmelsen er [sitat/referanse]. Dette tilsier at [tolkningsargument].» |
 
+Prioriter spesielt proposisjoner om innføring eller endring av overtredelsesgebyr-bestemmelser (typisk energiloven § 10-7) — disse inneholder ofte formålsuttalelser om proporsjonalitet og skyldkrav som er svært relevante for gebyrvurdering.
+
 Hvis ingen forarbeider er direkte relevante for den aktuelle paragrafen, skriv:
 "Ingen forarbeider spesifikt til [aktuell paragraf] identifisert i søkeresultatene. Anbefaler partner å søke etter: [konkrete dokumenttyper og søkeord, f.eks. 'NVEs høringsnotat ved innføring av systemansvarsforskriften § 14', 'Prop. om endringer i energiloven']."
 

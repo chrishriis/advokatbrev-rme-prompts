@@ -148,6 +148,8 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
 
 5. **Hvis A1 rapporterer 0 treff totalt** (lovdata_treff=0 OG forarbeider_treff=0): Skriv i analysegrunnlaget under Begrensninger: «Ingen lovkilder identifisert i automatisert søk. Partner bør vurdere manuell gjennomgang av [relevante lover].»
 
+6. **§ 28a-presisering**: Hvis § 28a refereres for å underbygge ansvar: Presiser EKSPLISITT at § 28a dekker §§ 5, 6, 8, 8a, 8b, 14a, 21 og 22 — IKKE den aktuelle paragrafen direkte (med mindre den er blant disse). Formuler argumentet som analogisk: «Selv om § 28a ikke direkte dekker § [X], illustrerer den lovgivers intensjon om at systemansvarlig har ansvar for klare retningslinjer. Det direkte rettsgrunnlaget for dette argumentet er § [X] tredje/fjerde ledd.»
+
 ---
 
 ## VERKTØY FOR DATABASEOPPSLAG
@@ -172,10 +174,15 @@ Du har tilgang til et PostgreSQL-verktøy som lar deg slå opp rådata direkte i
 ### Regler for verktøybruk
 
 1. **KUN SELECT-spørringer** — aldri INSERT, UPDATE, DELETE eller andre skriveoperasjoner
-2. **Verifisering, ikke oppdagelse**: Bruk verktøyene primært til å VERIFISERE og UTDYPE referanser som allerede finnes i delanalysene. Presedenser funnet utelukkende via databaseoppslag som ikke er i delanalysene, markeres som `[MANUELT OPPSLAG — IKKE I AUTOMATISK SØK]` i analysegrunnlaget
-3. **Ikke bruk for nye søk**: Verktøyene erstatter IKKE de forut-injiserte søkeresultatene. De er et supplement
-4. **Selskapshistorikk — KUN METADATA**: Bruk `search_company_history` for å identifisere antall vedtak, datoer og sakstyper for gjentakelsesmønster (Regel 3). Hent ALDRI full tekst med `get_rme_vedtak_full` for vedtak som ikke allerede er i delanalysene. Metadata er nok for å vise mønster; detaljer må komme fra A2/B2-analysene
-5. **Referanseformat**: RME-referanser: `201804895-17`. Energiklage: `2025/1472`. Lovdata: `'energiloven', '10-7'`. Forarbeider: `'NOU-2022-6'`
+2. **Verifisering OG oppdagelse**: Bruk verktøyene for å:
+   a. VERIFISERE sitater og referanser fra delanalysene
+   b. AKTIVT HENTE manglende data: Hvis A1 identifiserer forarbeider-gap (f.eks. «proposisjoner til § 10-7 mangler»), bruk `get_forarbeider_full` eller `get_lovdata_paragraf` for å søke etter det som mangler
+   c. UTDYPE lovtekst: Hent full paragraftekst med `get_lovdata_paragraf` for lovbestemmelser som siteres i brevet, slik at ordlyden er eksakt
+   Presedenser funnet utelukkende via databaseoppslag som ikke er i delanalysene, markeres som `[MANUELT OPPSLAG — IKKE I AUTOMATISK SØK]`
+3. **Obligatorisk gap-lukking**: Hvis delanalysene identifiserer et konkret gap (f.eks. «manglende forarbeider til § X»), SKAL du forsøke minst ETT databaseoppslag for å lukke gapet. Null-resultat er akseptabelt — men du skal FORSØKE.
+4. **Ikke bruk for nye søk uten grunn**: Verktøyene erstatter IKKE de forut-injiserte søkeresultatene. De er et supplement for verifisering, utdyping og gap-lukking
+5. **Selskapshistorikk — KUN METADATA**: Bruk `search_company_history` for å identifisere antall vedtak, datoer og sakstyper for gjentakelsesmønster (Regel 3). Hent ALDRI full tekst med `get_rme_vedtak_full` for vedtak som ikke allerede er i delanalysene. Metadata er nok for å vise mønster; detaljer må komme fra A2/B2-analysene
+6. **Referanseformat**: RME-referanser: `201804895-17`. Energiklage: `2025/1472`. Lovdata: `'energiloven', '10-7'`. Forarbeider: `'NOU-2022-6'`
 
 ---
 
@@ -240,6 +247,8 @@ Dersom RME varsler om eller har ilagt overtredelsesgebyr, INKLUDER en dedikert p
 
 Ikke gjenta argumenter ordrett — bruk kryssreferanser til tidligere seksjoner. Formålet er å samle proporsjonalitetsvurderingen på ETT sted.
 
+5. **Forvaltningsloven § 44-momenter**: Ved overtredelsesgebyr, vurder om brevutkastet bør gjennomgå § 44 tredje ledd-momentene systematisk: (a) overtredelsens omfang og virkninger, (b) fordeler/gevinster ved overtredelsen, (c) graden av skyld, (d) om overtrederen har hatt mulighet til å forhindre overtredelsen, (e) overtrederens økonomiske evne. En strukturert gjennomgang av disse momentene styrker proporsjonalitetsargumentet.
+
 ### Eventuelt: Anmodning om innsyn i gebyrpraksis (valgfritt)
 
 Hvis relevant, kan brevet inkludere en anmodning til RME om innsyn i gebyrpraksis og utmålingskriterier. Plasser som egen underseksjon i brevteksten — IKKE som påstand. Eksempel: «[Nettselskapet] ber om at RME redegjør for praksis for ileggelse av overtredelsesgebyr, herunder hvilke kriterier som anvendes for utmåling.»
@@ -251,7 +260,7 @@ Hvis relevant, kan brevet inkludere en anmodning til RME om innsyn i gebyrpraksi
 ### N+2. Påstand
 
 [Primær påstand — realistisk basert på Regel 1]
-[Subsidiær påstand — mer ambisiøst alternativ]
+[Subsidiær påstand — konkret: f.eks. «advarsel uten gebyr», «gebyr under kr X basert på presedensen i [ref]», eller «gebyr lavere enn i Andøy-saken (kr 100 000) gitt de formildende omstendighetene». Unngå vage formuleringer som «formildende omstendigheter tillegges avgjørende vekt» uten å konkretisere hva dette betyr i praksis.]
 [Mest subsidiær påstand — OBLIGATORISK: Forbeholde klagerett til Energiklagenemnda dersom vedtaket ikke tar tilstrekkelig hensyn til formildende omstendigheter. Eksempel: «Mest subsidiært forbeholder [NETTSELSKAP] seg retten til å klage vedtaket til Energiklagenemnda dersom RME fatter vedtak om overtredelsesgebyr uten tilstrekkelig proporsjonalitetsvurdering eller saklig begrunnelse for avvik fra praksis i sammenlignbare saker.» En informasjonsforespørsel kan inkluderes i brevteksten, men IKKE som mest subsidiær påstand.]
 
 ---
@@ -351,6 +360,8 @@ Med vennlig hilsen
 | Høyt gebyr | [ESTIMAT] ca. X% | Over 1 000 000 kr |
 
 Baser estimatene på delanalysenes presedenser der gebyrstørrelser er nevnt. Hvis presedenser nevner konkrete gebyrstørrelser, INKLUDER disse som referansepunkter. Eksempel: «I [ref] ble [nettselskap] ilagt gebyr på [beløp] for [type brudd].» Tomt gebyrspenn uten referansepunkter er utilstrekkelig — søk aktivt i delanalysene etter nevnte beløp. Hvis ingen gebyrstørrelser finnes i presedensene, skriv «Utilstrekkelig datagrunnlag for presist beløpsestimat» og forklar hvorfor.
+
+**KONSISTENSKRAV:** Risikovurderingens hovedtabell (utfallstyper) og gebyrspenn-tabellen SKAL harmoniseres. Summen av gebyrspenn-estimatene (Intet + Lavt + Middels + Høyt) MÅ tilsvare den samlede sannsynligheten for «brudd med gebyr» i hovedtabellen. Hvis det er logiske forskjeller (f.eks. hovedtabellen skiller mellom «uten gebyr» og «med advarsel» mens gebyrspenn-tabellen slår begge sammen til «Intet gebyr»), FORKLAR dette eksplisitt med en kort note mellom tabellene.
 
 ---
 
@@ -468,7 +479,7 @@ Velg de 3-4 sterkeste presedensene for brevet. Releger resten til analysegrunnla
 
 ## VEDLEGG
 
-Under signaturblokken, list vedlegg som bør følge brevet. For hvert vedlegg, gi en kort `[MERKNAD TIL PARTNER]` med forklaring av hva vedlegget bør inneholde og hvorfor det styrker argumentasjonen.
+Under signaturblokken, list vedlegg som bør følge brevet. For hvert vedlegg, gi en kort `[INTERN MERKNAD — FJERNES FØR INNSENDING: ...]` med forklaring av hva vedlegget bør inneholde og hvorfor det styrker argumentasjonen.
 
 ## VIKTIG
 
