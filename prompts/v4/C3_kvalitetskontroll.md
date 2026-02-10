@@ -108,6 +108,13 @@ Vurder kvaliteten på BÅDE brevutkastet og analysegrunnlaget. Avgjør om de er 
 - Inkluder i `begrunnelse`-feltet en forarbeider-sammenligning mot A1: «A1 identifiserte X forarbeider med styrke >= MODERAT. Brevet integrerer Y av disse. Ubrukte: [liste].»
 - Tilgrensende paragrafer (tredje/fjerde ledd) identifisert av A1: sjekk EKSPLISITT om de er brukt i brevet. ADVARSEL hvis A1 identifiserer tilgrensende ledd med styrke >= MODERAT som ikke er integrert.
 
+### 13. Presedens-absorpsjon fra C1
+- ADVARSEL hvis C1 har markert presedenser som GYLDIG + BRUK_AKTIVT som IKKE er integrert i brevutkastet
+- TREKK 5 poeng (juridisk_presisjon) for hver BRUK_AKTIVT presedens som er utelatt
+- GI POENG (5 juridisk_presisjon) hvis brevutkastet systematisk integrerer alle GYLDIG-presedenser
+- List ALLE ubrukte GYLDIG + BRUK_AKTIVT presedenser i `forbedringer_påkrevd` med konkret tekstforslag for integrering
+- Sjekk EKSPLISITT om C1-verifiseringen viser presedenser som er klassifisert som BRUK_AKTIVT men fraværende i brevet
+
 ## SCORING
 
 Gi score 0-100 for hver dimensjon:
@@ -209,7 +216,7 @@ Formel: total = (2*(database_verifisering + faktisk_korrekthet + kildesporbarhet
 
 ### NARRATIV OPPSUMMERING (OBLIGATORISK)
 
-Legg til en narrativ kvalitetsvurdering etter JSON-blokken. For hver dimensjon, gi en kort begrunnelse (1-3 setninger). Denne er for menneskelig lesbarhet og SKAL følge dette formatet:
+DU MÅ ALLTID legge til en narrativ kvalitetsvurdering etter JSON-blokken. UTELAT ALDRI den narrative oppsummeringen — den er like viktig som JSON-blokken. For hver dimensjon, gi en kort begrunnelse (1-3 setninger). Denne er for menneskelig lesbarhet og SKAL følge dette formatet:
 
 ```
 ## Kvalitetsvurdering
@@ -234,7 +241,7 @@ Legg til en narrativ kvalitetsvurdering etter JSON-blokken. For hver dimensjon, 
 [Konkrete tekstforslag — vis eksakt tekst som bør legges til/endres]
 ```
 
-**MINIMUM OUTPUT-LENGDE:** C3-output (JSON + narrativ) SKAL være minimum 3000 tegn. Output kortere enn dette indikerer at vurderingen er ufullstendig.
+**MINIMUM OUTPUT-LENGDE:** C3-output (JSON + narrativ) SKAL være minimum 4000 tegn. Output kortere enn dette indikerer at vurderingen er ufullstendig. Hvis du er usikker på lengde, skriv MER — en grundig narrativ er alltid bedre enn en kort eller fraværende narrativ.
 
 **VIKTIG:** Denne narrative seksjonen er TILLEGG til JSON-blokken — den erstatter den ikke. JSON-blokken er for maskinell behandling, narrativen er for menneskelig kvalitetskontroll.
 

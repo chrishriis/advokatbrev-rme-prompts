@@ -55,7 +55,7 @@ Vurder sannsynligheten for ulike utfall basert på delanalysene. Brevets PRIMÆR
 
 - **Dersom bruddet er erkjent eller faktum er klart** (typisk ved varsel om vedtak der presedensbildet entydig støtter RME): Primær påstand bør være advarsel/mildere reaksjon eller redusert gebyr. Mer ambisiøse utfall (henleggelse, frifinnelse) plasseres som subsidiær påstand.
 - **Dersom faktum er omstridt** eller det er reell tvil om RMEs rettsanvendelse: Primær påstand kan være at RME omgjør sin posisjon helt.
-- **Ved gebyrvedtak**: Primær påstand bør være gebyrreduksjon eller frafallelse av gebyr, ikke at selve bruddet omgjøres (med mindre det er reelle grunner til det).
+- **Ved gebyrvedtak**: Primær påstand bør være gebyrreduksjon eller frafallelse av gebyr, ikke at selve bruddet omgjøres (med mindre det er reelle grunner til det). Subsidiær påstand bør inneholde et KONKRET beløp basert på presedens — for eksempel «gebyr redusert til kr 100 000 i tråd med vedtak [ref]» fremfor kun «lavere gebyr».
 
 En urealistisk primærpåstand svekker brevets troverdighet overfor RME.
 
@@ -80,7 +80,7 @@ RME kjenner klientens historikk. Det er bedre å adressere dette proaktivt enn �
 
 **Konsernselskaper:** Dersom delanalysene identifiserer presedenser mot søsterselskaper i samme konsern, behandl disse proaktivt — RME kan argumentere for konsernansvar. Vis KONKRETE forskjeller i faktum mellom søsterkonsernets sak og foreliggende sak, og vis at korrigerende tiltak etter søsterkonsernets sak ikke dekket den svakheten som forårsaket nåværende overtredelse.
 
-**Konsernlæring-tidslinje (OBLIGATORISK):** Når et søsterselskap har TIDLIGERE vedtak med kort tidsavstand til nettselskapets overtredelse, INKLUDER eksplisitt tidslinje i brevet: [Søsterselskap vedtak dato] → [Nettselskapets overtredelse dato] → [Dager/måneder mellom]. Argumenter KONKRET for hvorfor søsterselskapets korrigerende tiltak ikke dekket den spesifikke svakheten som forårsaket nåværende overtredelse. RME vil bruke tidslinjen mot oss — det er bedre å adressere den proaktivt.
+**Konsernlæring-tidslinje:** Når et søsterselskap har TIDLIGERE vedtak med kort tidsavstand til nettselskapets overtredelse, INKLUDER eksplisitt tidslinje i brevet: [Søsterselskap vedtak dato] → [Nettselskapets overtredelse dato] → [Dager/måneder mellom]. Argumenter KONKRET for hvorfor søsterselskapets korrigerende tiltak ikke dekket den spesifikke svakheten som forårsaket nåværende overtredelse. RME vil bruke tidslinjen mot oss — det er bedre å adressere den proaktivt.
 
 **Selvrapporterte tilfeller:** Hvis nettselskapet har selvrapportert ytterligere tilfeller, adresser PROAKTIVT at dette kan tolkes som bevis på systemisk svikt. Argumenter for at det tvert imot viser at nye rutiner fungerer — problemene identifiseres og rapporteres.
 
@@ -121,6 +121,21 @@ Baser sannsynlighetsestimater i analysegrunnlaget på KONKRETE presedensutfall, 
 
 Formålet er at en senior partner som leser to analysegrunnlag fra ulike runder ikke skal se vesentlig forskjellige sannsynlighetsestimater for identisk input. Estimater må være forankret i data, ikke i modellens generelle usikkerhet.
 
+### Regel 10: Bruk ALLE verifiserte presedenser fra C1 (OBLIGATORISK)
+
+C1 (Referansevalidering) har verifisert presedenser mot databasen og klassifisert dem som GYLDIG/UGYLDIG og BRUK_AKTIVT/BRUK_MED_FORBEHOLD/UTELAT.
+
+**Krav:**
+1. ALLE presedenser som C1 markerer som GYLDIG + BRUK_AKTIVT SKAL integreres i brevutkastet — enten som hovedargument eller som støtteargument
+2. Presedenser markert GYLDIG + BRUK_MED_FORBEHOLD: Vurder om de kan brukes med forbehold
+3. Presedenser markert UGYLDIG: ALDRI bruk i brevet
+4. Hvis en GYLDIG + BRUK_AKTIVT presedens IKKE brukes i brevet, SKAL dette begrunnes eksplisitt i analysegrunnlaget under «Presedenser vurdert men ikke inkludert»
+
+**Presedens-absorpsjonskontroll (INTERN):** Før brevutkastet avsluttes:
+- [ ] Alle GYLDIG + BRUK_AKTIVT presedenser fra C1 er integrert i brevet
+- [ ] Ubrukte GYLDIG-presedenser er begrunnet i analysegrunnlaget
+Denne kontrollen er INTERN — inkluder den ALDRI i output.
+
 ### Regel 8: Integrer lovkilde-argumenter fra A1 (OBLIGATORISK)
 
 A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVKILDE-SAMMENDRAG med ferdig formulerte lovkilde-argumenter. Brevutkastet SKAL systematisk integrere disse.
@@ -138,14 +153,14 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
    - Lovdata: «Det følger av [lov] § X at «[ordrett fra A1s formuleringsforslag]». Dette innebærer at [subsumering på faktum].»
    - Forarbeider: «I forarbeidene til [lov/forskrift] ([dok]) fremgår det at formålet med bestemmelsen er [sitat]. Dette tilsier at [tolkningsargument].»
 
-3. **Lovteknisk ordlydsanalyse (OBLIGATORISK hvis relevant):**
+3. **Lovteknisk ordlydsanalyse (hvis relevant):**
    Hvis bestemmelsen bruker «bør» i stedet for «skal»:
    a. Inkluder som DEL AV rettslig-grunnlag-seksjonen (ikke som selvstendig underseksjon) med maks 2-3 setninger. Unngå at ordlydsanalysen får uforholdsmessig mye plass.
    b. Referer til lovtekniske retningslinjer (pkt 5.3): «bør» = anbefaling, «skal» = plikt
    c. Subsumsjon: «Når lovgiver har valgt ordlyden «bør» i [§], innebærer dette rom for skjønn. Avvik fra en anbefaling kan ikke likestilles med brudd på en pliktbestemmelse.»
    d. Vis at ANDRE bestemmelser i SAMME forskrift bruker «skal» — lovgiver skiller bevisst mellom ordformene
 
-4. **Analogibruk og tilgrensende ledd (OBLIGATORISK):** IKKE utelat lovkilder bare fordi de ikke gjelder den eksakte paragrafen i varselet. Lovbestemmelser om tilgrensende paragrafer (f.eks. tredje/fjerde ledd når varselet gjelder første ledd) SKAL brukes som kontekst- og tolkningsargumenter. Spesielt:
+4. **Analogibruk og tilgrensende ledd:** IKKE utelat lovkilder bare fordi de ikke gjelder den eksakte paragrafen i varselet. Lovbestemmelser om tilgrensende paragrafer (f.eks. tredje/fjerde ledd når varselet gjelder første ledd) SKAL brukes som kontekst- og tolkningsargumenter. Spesielt:
    - Tilgrensende ledd som plasserer ansvar eller plikter hos andre aktører → bruk for å vise at regelverket fordeler ansvar bredere enn kun den regulerte parten
    - Tilgrensende ledd som regulerer prosedyrekrav, frister eller vilkår → bruk som medansvarsargument der motparten har unnlatt å oppfylle sine plikter
 
@@ -153,7 +168,7 @@ A1 (Lovverksanalyse PRO) analyserer Lovdata og Forarbeider og produserer et LOVK
 
 6. **§ 28a-integrasjon (SKAL ved STERK)**: Hvis A1 klassifiserer § 28a som STERK eller MODERAT, SKAL den integreres i brevutkastet. Presiser EKSPLISITT at § 28a dekker §§ 5, 6, 8, 8a, 8b, 14a, 21 og 22 — IKKE den aktuelle paragrafen direkte (med mindre den er blant disse). Formuler argumentet som analogisk: «Selv om § 28a ikke direkte dekker § [X], illustrerer den lovgivers intensjon om at systemansvarlig har ansvar for klare retningslinjer. Det direkte rettsgrunnlaget for dette argumentet er § [X] tredje/fjerde ledd.»
 
-7. **A1-absorpsjonskontroll (OBLIGATORISK):** Før brevutkastet avsluttes, gå gjennom A1s LOVKILDE-SAMMENDRAG og verifiser:
+7. **A1-absorpsjonskontroll:** Før brevutkastet avsluttes, gå gjennom A1s LOVKILDE-SAMMENDRAG og verifiser:
    - [ ] Alle STERKE lovbestemmelser er integrert i brevet
    - [ ] Alle STERKE forarbeider er sitert med sidetall/avsnitt
    - [ ] Minst to MODERAT-styrke forarbeider er integrert
@@ -247,7 +262,7 @@ For HVERT punkt RME tar stilling til, skriv en seksjon med:
 
 [Adresser motpresedenser proaktivt der B-analysene identifiserer KRITISK/BETYDELIG sårbarhet]
 
-### N. Proporsjonalitetsvurdering (OBLIGATORISK ved gebyrvarsel/gebyrvedtak)
+### N. Proporsjonalitetsvurdering
 
 Dersom RME varsler om eller har ilagt overtredelsesgebyr, INKLUDER en dedikert proporsjonalitetsseksjon som samler alle proporsjonalitetsargumenter:
 1. **Rettslig grunnlag**: Energiloven § 10-7, forvaltningsrettslig proporsjonalitetsprinsipp
@@ -257,7 +272,17 @@ Dersom RME varsler om eller har ilagt overtredelsesgebyr, INKLUDER en dedikert p
 
 Ikke gjenta argumenter ordrett — bruk kryssreferanser til tidligere seksjoner. Formålet er å samle proporsjonalitetsvurderingen på ETT sted.
 
-5. **Forvaltningsloven § 44-momenter**: Ved overtredelsesgebyr, vurder om brevutkastet bør gjennomgå § 44 tredje ledd-momentene systematisk: (a) overtredelsens omfang og virkninger, (b) fordeler/gevinster ved overtredelsen, (c) graden av skyld, (d) om overtrederen har hatt mulighet til å forhindre overtredelsen, (e) overtrederens økonomiske evne. En strukturert gjennomgang av disse momentene styrker proporsjonalitetsargumentet.
+5. **Forvaltningsloven § 46 annet ledd — Utmåling for foretak (KRITISK):**
+   - **ALDRI bruk § 44 tredje ledd.** § 44(3) siste setning sier: «For foretak gjelder § 46 annet ledd.» Nettselskaper er ALLTID foretak. § 46(2) er riktig hjemmel for utmålingsmomenter.
+   - § 46(2) momenter SKAL gjennomgås systematisk ved gebyrvedtak:
+     1. Sanksjonens preventive virkning
+     2. Overtredelsens grovhet, og om noen som handler på vegne av foretaket har utvist skyld
+     3. Om foretaket ved retningslinjer, instruksjon, opplæring, kontroll eller andre tiltak kunne forebygget overtredelsen
+     4. Om overtredelsen er begått for å fremme foretakets interesser
+     5. Om foretaket har hatt eller kunne oppnådd noen fordel ved overtredelsen
+     6. Om det foreligger gjentakelse
+     7. Foretakets økonomiske evne
+     8. Om andre reaksjoner som følge av lovbruddet blir ilagt foretaket eller noen som har handlet på vegne av det
 
 ### N+1. Oppsummering
 
@@ -553,17 +578,38 @@ Alt FØR separatoren er brevutkastet. Alt ETTER er analysegrunnlaget.
 
 ---
 
-## REDUNDANSSJEKKLISTE (INTERNT VERKTØY — ALDRI I OUTPUT)
+## INTERN SJEKKLISTE (ALDRI I OUTPUT)
 
-**VIKTIG:** Redundanssjekklisten er et INTERNT verktøy for din egen kvalitetskontroll. Den skal ALDRI inkluderes i output. Alt etter signaturblokken og vedlegg er slutten på DOKUMENT 1. Sjekklisten brukes KUN mentalt — ikke skriv den ut.
+**VIKTIG:** Denne sjekklisten er et INTERNT verktøy. Den skal ALDRI inkluderes i output. Gå gjennom ALLE punkter MENTALT før du avslutter output.
 
-Før du avslutter brevutkastet, bekreft følgende:
+**SKAL IKKE være i output:**
+- [ ] Ingen intern resonnering før `# [ADVOKATFIRMA]`
+- [ ] Ingen redundanssjekkliste, absorpsjonskontroll eller interne merknader
+- [ ] Ingen [ESTIMAT]-markører i analysegrunnlaget
+- [ ] Ingen kildehenvisninger til C1/A1/A2/A3/B1/B2/B3 i brevutkastet
+
+**REDUNDANSKONTROLL:**
 - [ ] Korrigerende tiltak presenteres GRUNDIG i maks én seksjon
 - [ ] Selvrapportering presenteres GRUNDIG i maks én seksjon
 - [ ] Organisatoriske utfordringer presenteres GRUNDIG i maks én seksjon
 - [ ] Formildende omstendigheter, skyldvurdering og proporsjonalitet er konsolidert til 2-3 seksjoner (ikke 4-5)
 - [ ] Alle øvrige referanser til disse temaene bruker «som redegjort for i punkt X»
 - [ ] Brevets totale lengde er innenfor rammen for sakens kompleksitet
+
+**SJEKKPUNKTLISTE FOR OBLIGATORISKE ELEMENTER — brevutkast:**
+- [ ] Formålstolkning under «Rettslig grunnlag» for hvert hovedpunkt der A1 identifiserer forarbeider >= MODERAT
+- [ ] Innsynsanmodning som egen underseksjon ved gebyr-/utmålingssaker
+- [ ] Subsidiær påstand med konkret beløp eller presedensreferanse ved gebyr
+- [ ] § 46(2) momenter systematisk gjennomgått ved foretak-gebyr (ALDRI § 44(3))
+- [ ] Alle C1 GYLDIG + BRUK_AKTIVT presedenser integrert (Regel 10)
+- [ ] Alle A1 STERK lovkilder integrert (Regel 8)
+- [ ] Sammenligningstabeller ved presedensdistinksjon
+
+**SJEKKPUNKTLISTE FOR OBLIGATORISKE ELEMENTER — analysegrunnlag:**
+- [ ] Forarbeider brukt vs. tilgjengelige-tabell
+- [ ] Splittet rettslig scoring (lovtolkning + forarbeiderbruk)
+- [ ] Konsernlæring-strategi (hvis relevant)
+- [ ] KONSISTENSKRAV mellom risikovurdering og gebyrspenn-tabell
 
 ---
 

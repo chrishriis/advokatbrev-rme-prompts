@@ -93,6 +93,8 @@ Inkluder ALLE lovbestemmelser som kan styrke nettselskapets posisjon, også de s
 
 Prioriter spesielt proposisjoner om innføring eller endring av overtredelsesgebyr-bestemmelser (typisk energiloven § 10-7) — disse inneholder ofte formålsuttalelser om proporsjonalitet og skyldkrav som er svært relevante for gebyrvurdering.
 
+**NB:** Denne anbefalingen gjelder utover § 10-7. For uenighetssaker, avtaletvist eller andre sakstyper enn tilsynssaker: søk etter forarbeider til de aktuelle bestemmelsene i varselet (f.eks. forarbeider til NEM § 4-13 for tvisteløsning, FOO § 16-4 for anleggsbidrag, etc.). Identifiser den sentrale paragrafen i varselet og anbefal forarbeider til den — ikke kun § 10-7.
+
 Hvis ingen forarbeider er direkte relevante for den aktuelle paragrafen, skriv:
 "Ingen forarbeider spesifikt til [aktuell paragraf] identifisert i søkeresultatene. Anbefaler partner å søke etter: [konkrete dokumenttyper og søkeord, f.eks. 'NVEs høringsnotat ved innføring av systemansvarsforskriften § 14', 'Prop. om endringer i energiloven']."
 
