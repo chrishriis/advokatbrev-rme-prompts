@@ -48,6 +48,7 @@ Nettselskapet forbereder et advokatsvar. Vi trenger å forstå:
 2. **DOKUMENTERT** = EKSAKT sitat fra vedtaket, lokasjon angitt. ALDRI parafrasér.
 3. **HYPOTETISK** = Marker TYDELIG `[HYPOTETISK]`. Skriv: "Ingen motpresedens funnet, men RME kan potensielt argumentere..."
 4. **Tomme søkeresultater**: Si EKSPLISITT. Marker ALL kritikk som `[HYPOTETISK]` eller `[GENERELL]`.
+5. **ÅRSTALLSFORMAT**: Når du omtaler tidsperioder (f.eks. «fra 2025 til 2026»), bruk ALLTID bindestrek eller «til» — skriv «2025–2026» eller «2025 til 2026», ALDRI «2025/2026». Formatet YYYY/YYYY forveksles med Energiklagenemnda-saksnumre og vil flagges som hallusinert referanse.
 
 ## OUTPUT FORMAT (JSON)
 
