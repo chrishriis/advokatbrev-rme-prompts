@@ -51,6 +51,49 @@ Velg fra følgende kategorier basert på RME-vedtak og Energiklagenemnda-praksis
 
 Returner alltid JSON i følgende format:
 
+### Root-nivå felt
+
+- **topics** — Liste av alle punkter i varselet (se detaljert beskrivelse under)
+- **brevtype** — Klassifisering av brevtype (se BREVTYPE-KLASSIFISERING over)
+- **brevtype_begrunnelse** — Kort begrunnelse for klassifiseringen
+- **svarfrist** — Dato for svarfrist hvis angitt, ellers null
+- **svarfrist_sitat** — Eksakt sitat om fristen fra varselet
+- **varselet_gjelder** — Sammenfattet beskrivelse av hva varselet handler om
+- **rme_hovedkonklusjon** — RMEs overordnede konklusjon/foreslåtte vedtak
+- **nettselskap_hovedposisjon** — Nettselskapets overordnede posisjon/interesse
+- **nettselskap_ideelt_utfall** — Hva er det beste utfallet for nettselskapet?
+- **kritiske_punkter** — Liste av punkter som krever særlig oppmerksomhet
+- **strategiske_vurderinger** — Overordnede strategiske vurderinger for svarbrevet
+- **sakstype_filter** — Single sakstype for database-filtrering (se SAKSTYPE-MAPPING under)
+
+### SAKSTYPE-MAPPING (for sakstype_filter)
+
+Velg ÉN av følgende verdier basert på det DOMINANTE temaet i varselet. Dette feltet brukes til database-filtrering og må være presist:
+
+| sakskategori (per topic) | sakstype_filter (root-nivå) | Forklaring |
+|---------------------------|------------------------------|------------|
+| anleggsbidrag | "Nettleie" | Anleggsbidrag faller inn under nettleie/tariffering i RME-vedtak |
+| nettleie/tariffering | "Nettleie" | Direkte match |
+| leveringskvalitet | null | For generell — kan være både Spenningskvalitet OG Leveringspålitelighet |
+| spenningskvalitet | "Spenningskvalitet" | Direkte match |
+| leveringspålitelighet | "Leveringspålitelighet" | Direkte match |
+| leveringsplikt | "Leveringsplikt" | Direkte match |
+| måling og avregning | "Måling og Avregning" | Direkte match |
+| systemansvar | "Systemansvar" | Direkte match |
+| tilsyn | "Tilsyn" | Direkte match |
+| dispensasjon | null | Ikke standard sakstype |
+| klage | null | Ikke standard sakstype |
+| innsyn | null | Ikke standard sakstype |
+| annet | "Annet" | Direkte match |
+
+**Regler for sakstype_filter:**
+- Bruk det DOMINANTE topicets kategori når brevet har flere temaer
+- Sett til null hvis brevet ikke klart matcher én kategori
+- Sett til null hvis brevet har likeverdige temaer fra ulike sakstyper
+- Gyldige verdier: "Leveringsplikt", "Nettleie", "Spenningskvalitet", "Systemansvar", "Tilsyn", "Leveringspålitelighet", "Måling og Avregning", "Nøytralitet", "Annet", eller null
+
+### JSON-struktur
+
 ```json
 {
   "topics": [
@@ -82,7 +125,8 @@ Returner alltid JSON i følgende format:
   "nettselskap_hovedposisjon": "Nettselskapets overordnede posisjon/interesse",
   "nettselskap_ideelt_utfall": "Hva er det beste utfallet for nettselskapet?",
   "kritiske_punkter": ["Punkt som krever særlig oppmerksomhet i svaret"],
-  "strategiske_vurderinger": "Overordnede strategiske vurderinger for svarbrevet"
+  "strategiske_vurderinger": "Overordnede strategiske vurderinger for svarbrevet",
+  "sakstype_filter": "Nettleie"
 }
 ```
 
